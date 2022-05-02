@@ -1,0 +1,28 @@
+    @keyframes neonAnim {
+        from {
+            text-shadow:
+                0 0 30px rgba(231, 196, 93, .7),
+                0 0 60px rgba(231, 196, 93, .7),
+                0 0 120px rgba(231, 196, 93, .7);
+        }
+
+        to {
+            text-shadow:
+                0 0 25px rgba(231, 196, 93, .7),
+                0 0 40px rgba(231, 196, 93, .7),
+                0 0 80px rgba(231, 196, 93, .7);
+        }
+    }  
+
+
+/*-------------------------        EFECTO DEL BOTON "AGREGAR AL CARRO"         -------------------------*/
+
+    .add_cart:hover:not(:disabled) {
+        background: #00b800;
+        color: white;        
+    }
+
+    .add_cart:disabled {
+        cursor: auto;
+        color: #00b800;
+    }

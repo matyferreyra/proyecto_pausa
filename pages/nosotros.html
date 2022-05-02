@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/nosotros.css"> <!-- Linkeado externo a pagina de estilos CSS-->
+    <title>PAUSA - MATES</title> <!-- Esto sirve para nombrar la pestaña del navegador-->
+    <link rel="icon" href="../assets/img/pausa_favicon_small.png">
+</head>
+
+<body>
+    <!-----------------------------------------         ENCABEZADO           ---------------------------------------->
+    <header>
+        <div class="brandBox">
+            <a href="./../index.html"><img src="../assets/img/Logo Tiendita Pausa 400px SVG.svg" alt="Logo Pausa"
+                    class="img-fluid"></a>
+        </div>
+        <div class="leyendaCentral">
+            <p id="pausa">
+                Pausa
+            </p>
+            <p id="tiendita">
+                Tiendita de Cosas
+            </p>
+        </div>
+        <div class="margenDerecho">
+            <ul>
+                <!-- Esta lista va por fuera de la otra lista anterior porque con CSS tendrá un tratamiento distinto-->
+                <li><a href="./../pages/cuenta.html"><img src="../assets/img/icon_user_48px_f4c3b4.png" alt="cuenta"
+                            id="imgCuenta"></a></li>
+                <li><a href="./../pages/carrito.html"><img src="../assets/img/icon_cart_32px_f4c3b4.png" alt="usuario"
+                            id="sizecart"></a></li>
+            </ul>
+        </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <div>
+
+            <nav class="topnav" id="myTopnav">
+                <a href="./../index.html">Inicio</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Productos
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./ceramica.html">Cerámica</a>
+                        <a href="./cosmetica_natural.html">Cosmética Natural</a>
+                        <a href="./hilos.html">Hilos</a>
+                        <a href="./mates.html">Mates</a>
+                    </div>
+                </div>
+                <a href="#about">Nosotros</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>                
+            </nav>
+
+        </div>
+
+        <div>
+            <p class="reference">Nosotros</p>
+        </div>
+
+
+        <!----------------------------         CUERPO CON TEXTO      ---------------------------->
+        
+        <div class="container d-flex align-items-center cuerpo">
+            <div class="col-6">
+                <p class="text text-wrap">Somos Agustina y Matias, les hacedores de este pequeño proyecto sureño llamado "Tiendita Pausa", que
+                    nació gracias a la creatividad y la pasión de Agus por crear cosas nuevas, y en su imparable
+                    necesidad de plasmar con sus manos, y por medio de distintos materiales, texturas y formas, sus
+                    experiencias vividas en la vida cotidiana y lo que de alguna manera percibe continuamente por medio
+                    de sus sentidos, a lo largo de las 4 estaciones, con sus variados climas y a lo largo de los
+                    distintos rincones patagonicos. Mientras que Mati por su parte aporta su buen gusto, su mente y su
+                    lógica para brindar el soporte necesario en el proyecto. Juntos hacemos este hermoso proyecto que
+                    esperamos les guste y puedan disfrutar tanto como nosotros lo hacemos.</p>
+            </div>
+            <div class="col-1"></div> <!-- Este se usa para espaciar en el medio-->
+            <div class="imgContainer col-5 text-right">
+                <img src="../assets/img/Agus y Mati.jpeg" alt="Agus y Mati" class="img-fluid rounded-3 float-end border img-thumbnail border">
+            </div>
+            
+        </div>  
+
+
+            
+
+        <!-----------------------------------------    SOCIAL BAR DENTRO DEL MAIN   ---------------------------------------->
+        <aside class="socialBar">
+                <a href="https://www.instagram.com/tienditapausa/?hl=es-la" class="iconInsta" target="_blank"><img
+                        src="./../assets/img/instagram_small.png" alt="icono instagram"></a>
+                </aside>
+
+    </main>
+    <!-----------------------------------------           PIE DE PÁGINA           ---------------------------------------->
+    <footer class="pie">
+        <div>
+            <div>
+                <ul>
+                    <li><a href="./../pages/privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="./../pages/tyc.html">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="./../pages/contacto.html">Contacto</a>
+    </footer>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/JavaScript.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+
+/*---------- BOTONERA DE ELEGIR CANTIDAD DE ITEMS --------*/
+
+.amount_items {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/*------ BOTON DE AGREGAR AL CARRO ---------*/
+
+.add_cart {
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #eee;
+    border: none;
+    padding: 0.25rem;        
+    width: 10em;
+    border-radius: 1rem;
+    color: #f27413;        
+    cursor: pointer;
+}
+
+
+/* --------------------------------           MEDIA QUERIES            ----------------------------------*/
+
+
+@media (min-width:400px) and (max-width:600px) {
+
+    .amount_items {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .add_cart {
+        font-size: 1.5rem;
+}
+}
+
+/*------------------------------------------------------*/
+
+@media (min-width:601px) and (max-width:799px) {
+
+    .amount_items {
+        font-size: 1.55rem;
+        text-align: center;
+    }
+
+    .add_cart {
+        font-size: 1.65rem;
+}
+}
+
+/*------------------------------------------------------*/
+
+@media (min-width:800px) and (max-width:1023px) {
+    
+    .amount_items {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .add_cart {
+        font-size: 1.75em;
+}
+}
+
+/*------------------------------------------------------*/
+
+@media (min-width:1024px) {
+    .amount_items {
+        font-size: 1.85em;
+        text-align: center;
+    }
+
+    .add_cart {
+        font-size: 1.9em;
+}
+}

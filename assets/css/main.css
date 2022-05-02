@@ -1,0 +1,1700 @@
+@charset "UTF-8";
+/*-------------- HEADER  -----------*/
+/*-------------- NAVBAR  -----------*/
+/*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
+/*-------------- CONFIGURACION DE LAS TARJETAS  -----------*/
+/*CONFIG TEXTO TITULO TARJETA PRODUCTOS*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
+/*CONFIG TEXTO DESCRIPCION TARJETA PRODUCTOS*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
+/*-------------- CONFIGURACION DEl FOOTER  -----------*/
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap");
+.RESET {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%;
+  font-size: 70%; }
+
+img {
+  max-width: 100%; }
+
+@font-face {
+  font-family: "amsterdam-two";
+  src: url("./../fonts/amsterdam_two.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "spirqual";
+  src: url("./../fonts/spirequalLight.TTF");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Josh";
+  src: url("./../fonts/Jost-Light.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Adan_sans";
+  src: url("/assets/fonts/adarsh_sans_regular.otf"); }
+
+.imageProduct {
+  border-color: #c1b38a;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 20px; }
+
+.icon_instagram {
+  width: 100%;
+  /*float: right;*/ }
+
+@keyframes neonAnim {
+  from {
+    text-shadow: 0 0 30px rgba(231, 196, 93, 0.7), 0 0 60px rgba(231, 196, 93, 0.7), 0 0 120px rgba(231, 196, 93, 0.7); }
+  to {
+    text-shadow: 0 0 25px rgba(231, 196, 93, 0.7), 0 0 40px rgba(231, 196, 93, 0.7), 0 0 80px rgba(231, 196, 93, 0.7); } }
+
+/*-------------------------        EFECTO DEL BOTON "AGREGAR AL CARRO"         -------------------------*/
+.add_cart:hover:not(:disabled) {
+  background: #00b800;
+  color: white; }
+
+.add_cart:disabled {
+  cursor: auto;
+  color: #00b800; }
+
+.header_style_default {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #414060;
+  opacity: 100%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* ---------- ESTO ES EL ESTILO DE LA LEYENDA "PAUSA. TIENDITA DE COSAS" ----------*/ }
+  .header_style_default .logo_container {
+    width: 30%; }
+  .header_style_default .brand_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto; }
+    .header_style_default .brand_container #pausa {
+      font-family: "amsterdam-two";
+      font-size: 1.8rem;
+      /*10rem * 10px= 100px*/
+      font-weight: bold;
+      margin: auto;
+      /*color: #c1b38a;*/
+      /*width: 100%;*/
+      animation: neonAnim 2s alternate-reverse infinite;
+      color: #ebd595; }
+
+@keyframes neonAnim {
+  from {
+    text-shadow: 0 0 30px rgba(231, 196, 93, 0.7), 0 0 60px rgba(231, 196, 93, 0.7), 0 0 120px rgba(231, 196, 93, 0.7); }
+  to {
+    text-shadow: 0 0 25px rgba(231, 196, 93, 0.7), 0 0 40px rgba(231, 196, 93, 0.7), 0 0 80px rgba(231, 196, 93, 0.7); } }
+    .header_style_default .brand_container #tiendita {
+      width: 100%;
+      margin: 0.75% 0% 0% 0%;
+      color: lightgray;
+      /*position: relative;*/
+      font-family: spirqual;
+      font-size: 1.5rem;
+      font-weight: bold;
+      word-spacing: 0.2em;
+      letter-spacing: 0.35em; }
+  .header_style_default .margenDerecho {
+    display: none; }
+
+/* --------------------------------           MEDIA QUERIES            ----------------------------------*/
+@media (min-width: 400px) and (max-width: 600px) {
+  #pausa {
+    /*min-height: min-content;*/
+    width: inherit;
+    font-size: 150px;
+    height: 40px; }
+  #tiendita {
+    font-size: 1.5rem; } }
+
+/*----------------------------*/
+@media (min-width: 601x) and (max-width: 799px) {
+  #pausa {
+    /*min-height: min-content;*/
+    width: inherit;
+    font-size: 150px;
+    height: 40px; }
+  #tiendita {
+    font-size: 1.5rem; } }
+
+/*----------------------------------*/
+@media (min-width: 800px) and (max-width: 1023px) {
+  #pausa {
+    /*min-height: min-content;*/
+    width: inherit;
+    font-size: 150px;
+    height: 40px; }
+  #tiendita {
+    font-size: 1.5rem; } }
+
+/*--------------------------------*/
+@media (min-width: 1024px) {
+  #pausa {
+    /*min-height: min-content;*/
+    width: inherit;
+    font-size: 150px;
+    height: 40px; }
+  #tiendita {
+    font-size: 1.5rem; } }
+
+body {
+  min-height: 100%; }
+
+.body_style {
+  font-family: "Public Sans", sans-serif;
+  min-height: 100%;
+  background-image: url("../../img/hoja1.jpg");
+  /*background-size: cover;*/
+  /*background-position: center center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
+  /*background-color: black;*/
+  /*hasta aca le dimos cuestiones de forma a la imagen que se usa de fondo en la pagina*/ }
+
+/*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
+.reference {
+  font-size: 3.2rem;
+  font-family: "Josh";
+  text-align: center;
+  color: white;
+  /*padding-top: 1em;*/
+  /*padding-bottom: 0.5em;*/ }
+
+/* --------------------------------           MEDIA QUERIES            ----------------------------------*/
+@media (min-width: 400px) and (max-width: 600px) {
+  /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
+  .reference {
+    font-size: 3.6rem; } }
+
+@media (min-width: 601px) and (max-width: 799px) {
+  /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
+  .reference {
+    font-size: 6.8em; } }
+
+@media (min-width: 800px) and (max-width: 1023px) {
+  /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
+  .reference {
+    font-size: 7.5rem; } }
+
+/*-------------------------------      CONTENEDOR DE TODAS LAS TARJETAS DE PRODUCTOS EN MOBILE FIRST      -------------------------*/
+.galery_products_container {
+  display: flex;
+  flex-direction: column; }
+
+/*-----------------    TARJETAS DE PRODUCTOS, CON GRID    -----------------*/
+.cards_products_container {
+  display: grid;
+  grid-template-areas: "description " "image_product";
+  width: 80%;
+  grid-template-columns: repeat 1, min-content;
+  /*grid-template-rows: repeat (auto, 1fr);*/
+  grid-auto-rows: min-content;
+  justify-content: space-evenly;
+  grid-auto-columns: auto;
+  margin: 7.5% auto; }
+
+/*----------- COLUMNA TEXTO -------------------*/
+div.description {
+  grid-area: description;
+  /*display: flex;*/
+  flex-direction: column;
+  width: 100%;
+  text-align: justify; }
+  div.description .description,
+  div.description h1 {
+    color: lightgray;
+    font-size: 2.3em;
+    text-align: center;
+    font-weight: bold;
+    margin: 0; }
+  div.description .description,
+  div.description p {
+    color: lightgray;
+    font-size: 1.4em;
+    text-align: justify;
+    margin-top: 8%; }
+  div.description .buttons_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    /*margin-top: 10%*/ }
+    div.description .buttons_container ul {
+      display: inline-block;
+      margin: 10% 0;
+      padding: 0; }
+
+/*----------- COLUMNA IMAGEN -------------------*/
+div.image_product {
+  grid-area: image_product;
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+/* --------------------------------           MEDIA QUERIES            ----------------------------------*/
+@media (min-width: 400px) and (max-width: 600px) {
+  .cards_products_container div.description h1 {
+    font-size: 2.8em; }
+  .cards_products_container div.description p {
+    font-size: 1.7em; } }
+
+/*-----------------------------------------------------------------------*/
+@media (min-width: 601px) and (max-width: 799px) {
+  .cards_products_container div.description h1 {
+    font-size: 3.3em; }
+  .cards_products_container div.description p {
+    font-size: 1.8em; } }
+
+/*-------------------------------------------------------------------------*/
+@media (min-width: 800px) and (max-width: 1023px) {
+  .galery_products_container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; }
+  .cards_products_container {
+    display: grid;
+    grid-template-areas: "description image_product";
+    width: 90%;
+    grid-template-columns: repeat 2, 1fr;
+    grid-auto-rows: 1fr;
+    justify-content: space-evenly;
+    gap: 10% 0;
+    margin: 5%; }
+    .cards_products_container div.description {
+      grid-area: description;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      text-align: justify;
+      justify-content: space-around;
+      /*margin-left: 5%*/
+      row-gap: 2%; }
+      .cards_products_container div.description .description,
+      .cards_products_container div.description h1 {
+        color: lightgray;
+        font-size: 3.7em;
+        text-align: center;
+        font-weight: bold;
+        margin: 0 auto;
+        width: max-content; }
+      .cards_products_container div.description .description,
+      .cards_products_container div.description p {
+        color: lightgray;
+        font-size: 1.9em;
+        text-align: justify;
+        margin: 0; }
+      .cards_products_container div.description .buttons_container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around; }
+        .cards_products_container div.description .buttons_container ul {
+          display: inline-block;
+          margin: 5% 0;
+          padding: 0; }
+    .cards_products_container div.image_product {
+      grid-area: image_product;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0 0 0 5%; } }
+
+/*--------------------------------------------------------------------------*/
+@media (min-width: 1024px) {
+  .galery_products_container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; }
+  .cards_products_container {
+    display: grid;
+    grid-template-areas: "description image_product";
+    width: 90%;
+    grid-template-columns: repeat 2, 1fr;
+    grid-auto-rows: 1fr;
+    justify-content: space-evenly;
+    gap: 10% 0;
+    margin: 5%; }
+    .cards_products_container div.description {
+      grid-area: description;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      text-align: justify;
+      justify-content: space-evenly;
+      /*margin-left: 5%*/
+      row-gap: 2%; }
+      .cards_products_container div.description .description,
+      .cards_products_container div.description h1 {
+        color: lightgray;
+        font-size: 4.1em;
+        text-align: center;
+        font-weight: bold;
+        margin: 0 auto;
+        width: max-content; }
+      .cards_products_container div.description .description,
+      .cards_products_container div.description p {
+        color: lightgray;
+        font-size: 2.1em;
+        text-align: justify;
+        margin: 0; }
+      .cards_products_container div.description .buttons_container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 75%;
+        margin: 0 auto; }
+        .cards_products_container div.description .buttons_container ul {
+          display: inline-block;
+          margin: 5% 0;
+          padding: 0; }
+    .cards_products_container div.image_product {
+      grid-area: image_product;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0 0 0 5%; } }
+
+.social_bar {
+  position: fixed;
+  left: 88%;
+  top: 58%;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*z-index: 100;*/
+  /*float: right;*/ }
+
+.pie {
+  height: 100%;
+  background-color: #2C2918;
+  opacity: 85%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3.5%;
+  padding-right: 3.5%; }
+
+.pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 4% 2% 4%; }
+
+.containerul {
+  margin-top: 1.5%;
+  margin-bottom: 1.5%; }
+
+.pie ul li {
+  list-style: none;
+  margin-top: 8%;
+  font-family: 'Jost'; }
+
+.pie a {
+  color: white;
+  text-decoration: none;
+  font-family: "Josh";
+  font-size: 1.8em;
+  font-style: normal;
+  font-weight: bold; }
+
+.pie ul li a {
+  text-decoration: none;
+  color: white;
+  /*font-family: "amsterdam-two", regular;*/
+  font-size: 1.6em;
+  font-style: normal; }
+
+.pie a:hover {
+  color: yellow;
+  transition: all .3s; }
+
+.contact {
+  width: 8.5%; }
+
+.contact > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .pie ul li a {
+    font-size: 1.75em; }
+  .pie a {
+    font-size: 1.95em; } }
+
+@media (min-width: 601px) and (max-width: 799px) {
+  .pie ul li a {
+    font-size: 1.85em; }
+  .pie a {
+    font-size: 2.05em; } }
+
+/*---------- BOTONERA DE ELEGIR CANTIDAD DE ITEMS --------*/
+.amount_items {
+  font-size: 1rem;
+  text-align: center; }
+
+/*------ BOTON DE AGREGAR AL CARRO ---------*/
+.add_cart {
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #eee;
+  border: none;
+  padding: 0.25rem;
+  width: 10em;
+  border-radius: 1rem;
+  color: #f27413;
+  cursor: pointer; }
+
+/* --------------------------------           MEDIA QUERIES            ----------------------------------*/
+@media (min-width: 400px) and (max-width: 600px) {
+  .amount_items {
+    font-size: 1.4rem;
+    text-align: center; }
+  .add_cart {
+    font-size: 1.5rem; } }
+
+/*------------------------------------------------------*/
+@media (min-width: 601px) and (max-width: 799px) {
+  .amount_items {
+    font-size: 1.55rem;
+    text-align: center; }
+  .add_cart {
+    font-size: 1.65rem; } }
+
+/*------------------------------------------------------*/
+@media (min-width: 800px) and (max-width: 1023px) {
+  .amount_items {
+    font-size: 1.7rem;
+    text-align: center; }
+  .add_cart {
+    font-size: 1.75em; } }
+
+/*------------------------------------------------------*/
+@media (min-width: 1024px) {
+  .amount_items {
+    font-size: 1.85em;
+    text-align: center; }
+  .add_cart {
+    font-size: 1.9em; } }
+
+html {
+  height: 100%;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Public Sans", sans-serif;
+  min-height: 100%;
+  background-image: url("/assets/img/punto_panomarico_1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black;
+  /*hasta aca le dimos cuestiones de forma a la imagen que se usa de fondo en la pagina*/ }
+
+.grid-container > * {
+  /*box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);*/
+  /*border-radius: 4px;*/
+  /*padding: 6%;*/
+  text-align: center; }
+
+.header {
+  grid-area: header;
+  /*background-color: #85aedd;*/ }
+
+.navbar {
+  grid-area: navbar;
+  /*background-color: #afd6af;*/ }
+
+.sidebar {
+  grid-area: sidebar;
+  /*background-color: #fdcfcf;*/ }
+
+.main {
+  grid-area: main;
+  /*background-color: #f5f5f5;*/ }
+
+.footer {
+  grid-area: footer;
+  /*background-color: #8c96a0;*/ }
+
+.grid-container {
+  display: grid;
+  /*gap: 2px;*/
+  /*---- esto es para configurar la separacion entre contenedores ----*/
+  grid-template-areas: "header" "navbar" "textcategorias" "cardsproductos" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 2.5fr 1fr 0.5fr 7fr 2.5fr; }
+
+@media (max-width: 320px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header header" "navbar textcategorias" "navbar cardsproductos" "footer footer";
+    grid-template-columns: 25% auto;
+    /*tamaño de las columnas*/
+    grid-template-rows: 7.5% 2% auto 5%;
+    /*tamaño de las filas*/ }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #414060;
+    opacity: 85%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0;
+    padding-right: 10px; }
+  .header > a {
+    /*aca configuro el tamaño del contenedor de la imagen */
+    width: 35%;
+    padding-left: 3%; }
+  .header a img {
+    /*aca configuro el tamaño de la imagen, teniendo en cuenta la clase anterior*/
+    width: 100%;
+    display: inline; }
+  /* ---------- ESTO ES EL ESTILO DE LA LEYENDA "PAUSA. TIENDITA DE COSAS" ----------*/
+  .leyendaCentral {
+    /*text-align: center;*/
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between; }
+  #pausa {
+    /*padding-top: 20%;*/
+    font-family: "amsterdam-two";
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin: auto;
+    color: #c1b38a;
+    /*position: absolute; */ }
+  #tiendita {
+    width: 100%;
+    margin: 0 50% 0 0;
+    color: lightgray;
+    /*position: relative;*/
+    font-family: spirqual;
+    font-size: 1.1rem;
+    font-weight: bold;
+    word-spacing: 1px;
+    letter-spacing: 3.5px; }
+  /*------------------------        ESTO ES EL ICONO DEL CARRITO Y DEL USUARIO         -----------------------*/
+  .margenDerecho {
+    display: none; }
+  /*--------------------      NAVBAR     ----------------------*/
+  .topnav {
+    background-color: #C98A3B;
+    overflow: hidden;
+    opacity: 90%;
+    width: 28rem;
+    margin: auto;
+    height: 4.5em;
+    border-radius: 0px 0px 45px 45px;
+    display: flex;
+    justify-content: center; }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Josh";
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; }
+  .topnav .icon {
+    display: none; }
+  .dropdown {
+    float: left;
+    overflow: hidden; }
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0; }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; }
+  .topnav a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: #414060;
+    color: #F4C3B4; }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black; }
+  .dropdown:hover .dropdown-content {
+    display: block; } }
+
+@media (max-width: 320px) and (max-width: 600px) {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none; }
+  .topnav a.icon {
+    float: right;
+    display: block; } }
+
+@media screen and (max-width: 320px) and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative; }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left; }
+  .topnav.responsive .dropdown {
+    float: none; }
+  .topnav.responsive .dropdown-content {
+    position: relative; }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left; } }
+
+@media (max-width: 320px) {
+  /*-------------------    ACA EMPIEZO A DARLE FORMA AL SUBMENU QUE SE DESPLIEGA EN "PRODUCTOS"    ----------------------*/
+  .submenu {
+    display: none; }
+  /*---------   CATEGORIAS DE PRODUCTOS    -----------------*/
+  .textcategorias {
+    font-size: calc(1.2em + 1vw);
+    font-weight: bold;
+    height: 100%;
+    margin: 0;
+    padding-right: 12%;
+    padding-top: 5%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-family: "Josh";
+    color: white;
+    /*position: relative;*/ }
+  /*-----------------   tarjetas de productos    --------------------*/
+  .cardsproductos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0 5% 0;
+    padding: 0%; }
+  .cardsproductos .productCat {
+    /*-------  ACÁ CONFIGURO CÓMO SERÁ EL CONTENDOR DE CADA TARJETA/CATEGORIA  --------*/
+    width: 60%;
+    border-color: #c1b38a;
+    border-style: solid;
+    border-width: 2px;
+    margin: 10% 15% 10% 3%;
+    /*------como no se funka el align de la linea 81, lo configure manualmente------- */
+    border-radius: 15px;
+    justify-content: space-evenly;
+    background: #ececec;
+    align-items: center; }
+  .resize {
+    /*-----    redimensiono todas las imagenes botoneras   -----*/
+    width: 100%;
+    border-radius: 15px 15px 0 0; }
+  .productCat__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px; }
+  .textCard {
+    font-family: "Adan_sans";
+    color: black;
+    font-size: small;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none; }
+  /* ---------------------   SOCIAL BAR   -------------------*/
+  .socialBar {
+    position: fixed;
+    right: 0;
+    top: 63%;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    margin-right: 3%; }
+  .socialBar a {
+    max-width: 16px;
+    max-height: 16px; }
+  /*--------------              FOOTER              -------------*/
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 4% 2% 4%;
+    height: 120%;
+    background-color: #2C2918;
+    opacity: 85%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: white; }
+  .containerul {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%; }
+  .footer ul li {
+    list-style: none;
+    margin-top: 0%;
+    font-family: 'Jost', sans-serif; }
+  .footer a {
+    color: white;
+    text-decoration: none;
+    font-family: "Josh";
+    font-size: medium;
+    font-style: normal; }
+  .footer ul li a {
+    text-decoration: none;
+    color: white;
+    /*font-family: "amsterdam-two", regular;*/
+    font-size: medium;
+    font-style: normal; }
+  .contact {
+    width: 30%;
+    order: -1; }
+  .contact > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .contact ul img {
+    max-width: 16px;
+    max-height: 16px; } }
+
+/*----------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 321px) and (max-width: 480px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #414060;
+    opacity: 85%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0;
+    padding-right: 10px; }
+  .header > a {
+    /*aca configuro el tamaño del contenedor de la imagen */
+    width: 25%;
+    padding-left: 3%; }
+  .header a img {
+    /*aca configuro el tamaño de la imagen, teniendo en cuenta la clase anterior*/
+    width: 100%;
+    display: inline; }
+  /* ---------- ESTO ES EL ESTILO DE LA LEYENDA "PAUSA. TIENDITA DE COSAS" ----------*/
+  .leyendaCentral {
+    /*text-align: center;*/
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between; }
+  #pausa {
+    /*padding-top: 20%;*/
+    font-family: "amsterdam-two";
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin: auto;
+    color: #c1b38a;
+    /*position: absolute; */ }
+  #tiendita {
+    width: 100%;
+    margin: 0 50% 0 0;
+    color: lightgray;
+    /*position: relative;*/
+    font-family: spirqual;
+    font-size: 1.1rem;
+    font-weight: bold;
+    word-spacing: 1px;
+    letter-spacing: 3.5px; }
+  /*------------------------        ESTO ES EL ICONO DEL CARRITO Y DEL USUARIO         -----------------------*/
+  .margenDerecho {
+    width: 10%;
+    margin-right: 1.5%;
+    /*display: flex;*/
+    /*justify-content: space-between*/ }
+  .margenDerecho ul {
+    /*ESTO ES PARA DAR ESTILO A LOS BOTONES DEL CARRITO Y DEL USUARIO*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none; }
+  /*------------       ACA EMPIEZO A DARLE FORMA AL MENU "NAV" como menu diferenciado dentro del propio HEADER       --------------*/
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .navegacion {
+    /*    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);    */
+    width: 30%;
+    margin: auto;
+    height: 2.9vw;
+    background-color: #C98A3B;
+    opacity: 85%;
+    border-radius: 0px 0px 45px 45px;
+    display: flex; }
+  .navegacion ul {
+    list-style: none;
+    margin: auto; }
+  .menu > li {
+    /*de esta manera le estamos diciendo que queremos que se aplique este estilo unicamente al primer <li> que aparece en el menu, no a los subsiguientes <li> que puedan aparecer en el resto del menu*/
+    position: relative;
+    display: inline-block;
+    /*de esta manera los elementos del menu principal se verán uno al lado del otro*/ }
+  .menu > li > a {
+    /*de esta manera le estamos diciendo que queremos que se aplique este estilo unicamente a los primeros elementos <a> que están dentro de este <li> que aparece en el menu, no a los subsiguientes <a> <li> que puedan aparecer en el resto del menu. Es una forma de dar estilos a ciertos elementos en particular, por medio de padre-hijos. En este caso acá estamos tocando el texto del menu, a trav´s de los <li>*/
+    display: block;
+    padding: 7% 20px;
+    /*--- aca configuramos la distancia entre el submenu productos y el resto del menu nav  ---*/
+    color: white;
+    font-family: "Josh";
+    font-weight: bold;
+    text-decoration: none; }
+  #productos {
+    display: none; }
+  /*------------     HOVER    ------------*/
+  .menu li a:hover {
+    /*de esta manera este hover se aplicará A TODOS los elementos <li>, y sus <a>. Es decir que SE APLICA a las PALABRAS DEL MENU. El hover son unos estilos secundarios que se activan cuando el cursor se posiciona sobre los elementos indicados en este estilo*/
+    color: #F4C3B4;
+    transition: all .3s;
+    background-color: #302f2f;
+    border-radius: 5px; }
+  /*-------------------    ACA EMPIEZO A DARLE FORMA AL SUBMENU QUE SE DESPLIEGA EN "PRODUCTOS"    ----------------------*/
+  .submenu {
+    position: absolute;
+    background-color: #414060;
+    width: 105%;
+    display: none;
+    border-radius: 0px 0px 15px 15px;
+    padding-top: 7px; }
+  .submenu li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    font-family: "Josh";
+    text-decoration: none;
+    text-align: left; }
+  /*------------   HOVER    -----------*/
+  .menu li:hover .submenu {
+    display: block; }
+  /*--------------------------------------------------------*/
+  /*---------   CATEGORIAS DE PRODUCTOS    -----------------*/
+  .textcategorias > p {
+    /*font-size: calc(1.5em + 1vw);*/
+    font-size: 1.8rem;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    /*padding-left: 1.8em;*/
+    /*padding-top: 1.5em;*/
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: "Josh";
+    color: white;
+    /*position: relative;*/ }
+  /*-----------------   tarjetas de productos    --------------------*/
+  .cardsproductos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0% 0% 0;
+    padding: 0%; }
+  .cardsproductos .productCat {
+    /*-------  ACÁ CONFIGURO CÓMO SERÁ EL CONTENDOR DE CADA TARJETA/CATEGORIA  --------*/
+    width: 22%;
+    border-color: #c1b38a;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0% 0% 0% 0%;
+    /*------como no se funka el align de la linea 81, lo configure manualmente------- */
+    border-radius: 15px;
+    justify-content: space-evenly;
+    background: #ececec;
+    align-items: center; }
+  .resize {
+    /*-----    redimensiono todas las imagenes botoneras   -----*/
+    width: 100%;
+    border-radius: 15px 15px 0 0; }
+  .productCat__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px; }
+  .textCard {
+    font-family: "Adan_sans";
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none; }
+  /* ---------------------   SOCIAL BAR   -------------------*/
+  .socialBar {
+    position: fixed;
+    right: 50%;
+    top: 78%;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    margin-right: 3%; }
+  .socialBar a {
+    max-width: 16px;
+    max-height: 16px; }
+  /*--------------------    FOOTER      ------------------------------------*/
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2C2918;
+    opacity: 85%;
+    font-size: 0.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; }
+  .containerul {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    order: -1;
+    font-size: 1.5rem; }
+  .footer ul li {
+    list-style: none;
+    margin-top: 2%; }
+  .footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; }
+  .footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.35rem; }
+  .footer a:hover {
+    color: yellow;
+    transition: all .3s; }
+  .contact {
+    width: 10%;
+    margin-left: auto;
+    /*importante para alinear los 2 elementos listas del footer*/
+    margin-right: 4%; }
+  .contact > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; } }
+
+@media (min-width: 481px) and (max-width: 780px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #414060;
+    opacity: 85%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0;
+    padding-right: 10px; }
+  .header > a {
+    /*aca configuro el tamaño del contenedor de la imagen */
+    width: 25%;
+    padding-left: 3%; }
+  .header a img {
+    /*aca configuro el tamaño de la imagen, teniendo en cuenta la clase anterior*/
+    width: 100%;
+    display: inline; }
+  /* ---------- ESTO ES EL ESTILO DE LA LEYENDA "PAUSA. TIENDITA DE COSAS" ----------*/
+  .leyendaCentral {
+    /*text-align: center;*/
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between; }
+  #pausa {
+    /*padding-top: 20%;*/
+    font-family: "amsterdam-two";
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin: auto;
+    color: #c1b38a;
+    /*position: absolute; */ }
+  #tiendita {
+    width: 100%;
+    margin: 0 50% 0 0;
+    color: lightgray;
+    /*position: relative;*/
+    font-family: spirqual;
+    font-size: 1.1rem;
+    font-weight: bold;
+    word-spacing: 1px;
+    letter-spacing: 3.5px; }
+  /*------------------------        ESTO ES EL ICONO DEL CARRITO Y DEL USUARIO         -----------------------*/
+  .margenDerecho {
+    width: 10%;
+    margin-right: 1.5%;
+    /*display: flex;*/
+    /*justify-content: space-between*/ }
+  .margenDerecho ul {
+    /*ESTO ES PARA DAR ESTILO A LOS BOTONES DEL CARRITO Y DEL USUARIO*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none; }
+  /*------------       ACA EMPIEZO A DARLE FORMA AL MENU "NAV" como menu diferenciado dentro del propio HEADER       --------------*/
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .navegacion {
+    /*    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);    */
+    width: 30%;
+    margin: auto;
+    height: 2.9vw;
+    background-color: #C98A3B;
+    opacity: 85%;
+    border-radius: 0px 0px 45px 45px;
+    display: flex; }
+  .navegacion ul {
+    list-style: none;
+    margin: auto; }
+  .menu > li {
+    /*de esta manera le estamos diciendo que queremos que se aplique este estilo unicamente al primer <li> que aparece en el menu, no a los subsiguientes <li> que puedan aparecer en el resto del menu*/
+    position: relative;
+    display: inline-block;
+    /*de esta manera los elementos del menu principal se verán uno al lado del otro*/ }
+  .menu > li > a {
+    /*de esta manera le estamos diciendo que queremos que se aplique este estilo unicamente a los primeros elementos <a> que están dentro de este <li> que aparece en el menu, no a los subsiguientes <a> <li> que puedan aparecer en el resto del menu. Es una forma de dar estilos a ciertos elementos en particular, por medio de padre-hijos. En este caso acá estamos tocando el texto del menu, a trav´s de los <li>*/
+    display: block;
+    padding: 7% 20px;
+    /*--- aca configuramos la distancia entre el submenu productos y el resto del menu nav  ---*/
+    color: white;
+    font-family: "Josh";
+    font-weight: bold;
+    text-decoration: none; }
+  #productos {
+    display: none; }
+  /*------------     HOVER    ------------*/
+  .menu li a:hover {
+    /*de esta manera este hover se aplicará A TODOS los elementos <li>, y sus <a>. Es decir que SE APLICA a las PALABRAS DEL MENU. El hover son unos estilos secundarios que se activan cuando el cursor se posiciona sobre los elementos indicados en este estilo*/
+    color: #F4C3B4;
+    transition: all .3s;
+    background-color: #302f2f;
+    border-radius: 5px; }
+  /*-------------------    ACA EMPIEZO A DARLE FORMA AL SUBMENU QUE SE DESPLIEGA EN "PRODUCTOS"    ----------------------*/
+  .submenu {
+    position: absolute;
+    background-color: #414060;
+    width: 105%;
+    display: none;
+    border-radius: 0px 0px 15px 15px;
+    padding-top: 7px; }
+  .submenu li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    font-family: "Josh";
+    text-decoration: none;
+    text-align: left; }
+  /*------------   HOVER    -----------*/
+  .menu li:hover .submenu {
+    display: block; }
+  /*--------------------------------------------------------*/
+  /*---------   CATEGORIAS DE PRODUCTOS    -----------------*/
+  .textcategorias > p {
+    /*font-size: calc(1.5em + 1vw);*/
+    font-size: 1.8rem;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    /*padding-left: 1.8em;*/
+    /*padding-top: 1.5em;*/
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: "Josh";
+    color: white;
+    /*position: relative;*/ }
+  /*-----------------   tarjetas de productos    --------------------*/
+  .cardsproductos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0% 0% 0;
+    padding: 0%; }
+  .productCat {
+    /*-------  ACÁ CONFIGURO CÓMO SERÁ EL CONTENDOR DE CADA TARJETA/CATEGORIA  --------*/
+    width: 18%;
+    border-color: #c1b38a;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0% 0% 0% 0%;
+    /*------como no se funka el align de la linea 81, lo configure manualmente------- */
+    border-radius: 15px;
+    justify-content: space-evenly;
+    background: #ececec;
+    align-items: center; }
+  .resize {
+    /*-----    redimensiono todas las imagenes botoneras   -----*/
+    width: 100%;
+    border-radius: 15px 15px 0 0; }
+  .productCat__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px; }
+  .textCard {
+    font-family: "Adan_sans";
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none; }
+  /* ---------------------   SOCIAL BAR   -------------------*/
+  .socialBar {
+    position: fixed;
+    right: 50%;
+    top: 78%;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    margin-right: 3%; }
+  .socialBar a {
+    max-width: 16px;
+    max-height: 16px; }
+  /*--------------------    FOOTER      ------------------------------------*/
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2C2918;
+    opacity: 85%;
+    font-size: 0.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; }
+  .containerul {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    order: -1;
+    font-size: 1.5rem; }
+  .footer ul li {
+    list-style: none;
+    margin-top: 2%; }
+  .footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; }
+  .footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.35rem; }
+  .footer a:hover {
+    color: yellow;
+    transition: all .3s; }
+  .contact {
+    width: 10%;
+    margin-left: auto;
+    /*importante para alinear los 2 elementos listas del footer*/
+    margin-right: 4%; }
+  .contact > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; } }
+
+@media (min-width: 781px) and (max-width: 1199px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #414060;
+    opacity: 85%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0;
+    padding-right: 10px; }
+  .header > a {
+    /*aca configuro el tamaño del contenedor de la imagen */
+    width: 25%;
+    padding-left: 3%; }
+  .header a img {
+    /*aca configuro el tamaño de la imagen, teniendo en cuenta la clase anterior*/
+    width: 100%;
+    display: inline; }
+  /* ---------- ESTO ES EL ESTILO DE LA LEYENDA "PAUSA. TIENDITA DE COSAS" ----------*/
+  .leyendaCentral {
+    /*text-align: center;*/
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between; }
+  #pausa {
+    /*padding-top: 20%;*/
+    font-family: "amsterdam-two";
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin: auto;
+    color: #c1b38a;
+    /*position: absolute; */ }
+  #tiendita {
+    width: 100%;
+    margin: 0 50% 0 0;
+    color: lightgray;
+    /*position: relative;*/
+    font-family: spirqual;
+    font-size: 1.1rem;
+    font-weight: bold;
+    word-spacing: 1px;
+    letter-spacing: 3.5px; }
+  /*------------------------        ESTO ES EL ICONO DEL CARRITO Y DEL USUARIO         -----------------------*/
+  .margenDerecho {
+    width: 10%;
+    margin-right: 1.5%;
+    /*display: flex;*/
+    /*justify-content: space-between*/ }
+  .margenDerecho ul {
+    /*ESTO ES PARA DAR ESTILO A LOS BOTONES DEL CARRITO Y DEL USUARIO*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none; }
+  /*------------       ACA EMPIEZO A DARLE FORMA AL MENU "NAV" como menu diferenciado dentro del propio HEADER       --------------*/
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .navegacion {
+    /*    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);    */
+    width: 30%;
+    margin: auto;
+    height: 2.9vw;
+    background-color: #C98A3B;
+    opacity: 85%;
+    border-radius: 0px 0px 45px 45px;
+    display: flex; }
+  .navegacion ul {
+    list-style: none;
+    margin: auto; }
+  .menu > li {
+    /*de esta manera le estamos diciendo que queremos que se aplique este estilo unicamente al primer <li> que aparece en el menu, no a los subsiguientes <li> que puedan aparecer en el resto del menu*/
+    position: relative;
+    display: inline-block;
+    /*de esta manera los elementos del menu principal se verán uno al lado del otro*/ }
+  .menu > li > a {
+    /*de esta manera le estamos diciendo que queremos que se aplique este estilo unicamente a los primeros elementos <a> que están dentro de este <li> que aparece en el menu, no a los subsiguientes <a> <li> que puedan aparecer en el resto del menu. Es una forma de dar estilos a ciertos elementos en particular, por medio de padre-hijos. En este caso acá estamos tocando el texto del menu, a trav´s de los <li>*/
+    display: block;
+    padding: 7% 20px;
+    /*--- aca configuramos la distancia entre el submenu productos y el resto del menu nav  ---*/
+    color: white;
+    font-family: "Josh";
+    font-weight: bold;
+    text-decoration: none; }
+  #productos {
+    display: none; }
+  /*------------     HOVER    ------------*/
+  .menu li a:hover {
+    /*de esta manera este hover se aplicará A TODOS los elementos <li>, y sus <a>. Es decir que SE APLICA a las PALABRAS DEL MENU. El hover son unos estilos secundarios que se activan cuando el cursor se posiciona sobre los elementos indicados en este estilo*/
+    color: #F4C3B4;
+    transition: all .3s;
+    background-color: #302f2f;
+    border-radius: 5px; }
+  /*-------------------    ACA EMPIEZO A DARLE FORMA AL SUBMENU QUE SE DESPLIEGA EN "PRODUCTOS"    ----------------------*/
+  .submenu {
+    position: absolute;
+    background-color: #414060;
+    width: 105%;
+    display: none;
+    border-radius: 0px 0px 15px 15px;
+    padding-top: 7px; }
+  .submenu li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    font-family: "Josh";
+    text-decoration: none;
+    text-align: left; }
+  /*------------   HOVER    -----------*/
+  .menu li:hover .submenu {
+    display: block; }
+  /*--------------------------------------------------------*/
+  /*---------   CATEGORIAS DE PRODUCTOS    -----------------*/
+  .textcategorias > p {
+    /*font-size: calc(1.5em + 1vw);*/
+    font-size: 1.8rem;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    /*padding-left: 1.8em;*/
+    /*padding-top: 1.5em;*/
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: "Josh";
+    color: white;
+    /*position: relative;*/ }
+  /*-----------------   tarjetas de productos    --------------------*/
+  .cardsproductos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0% 0% 0;
+    padding: 0%; }
+  .cardsproductos .productCat {
+    /*-------  ACÁ CONFIGURO CÓMO SERÁ EL CONTENDOR DE CADA TARJETA/CATEGORIA  --------*/
+    width: 18%;
+    border-color: #c1b38a;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0% 0% 0% 0%;
+    /*------como no se funka el align de la linea 81, lo configure manualmente------- */
+    border-radius: 15px;
+    justify-content: space-evenly;
+    background: #ececec;
+    align-items: center; }
+  .resize {
+    /*-----    redimensiono todas las imagenes botoneras   -----*/
+    width: 100%;
+    border-radius: 15px 15px 0 0; }
+  .productCat__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px; }
+  .textCard {
+    font-family: "Adan_sans";
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none; }
+  /* ---------------------   SOCIAL BAR   -------------------*/
+  .socialBar {
+    position: fixed;
+    right: 50%;
+    top: 78%;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    margin-right: 3%; }
+  .socialBar a {
+    max-width: 16px;
+    max-height: 16px; }
+  /*--------------------    FOOTER      ------------------------------------*/
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2C2918;
+    opacity: 85%;
+    font-size: 0.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; }
+  .containerul {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    order: -1;
+    font-size: 1.5rem; }
+  .footer ul li {
+    list-style: none;
+    margin-top: 2%; }
+  .footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; }
+  .footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.35rem; }
+  .footer a:hover {
+    color: yellow;
+    transition: all .3s; }
+  .contact {
+    width: 10%;
+    margin-left: auto;
+    /*importante para alinear los 2 elementos listas del footer*/
+    margin-right: 4%; }
+  .contact > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; } }
+
+@media (min-width: 1200px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #414060;
+    opacity: 85%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0;
+    padding-right: 10px;
+    min-height: 15%; }
+  .header > a {
+    /*aca configuro el tamaño del contenedor de la imagen */
+    width: 15%;
+    padding-left: 0%; }
+  .header > a > img {
+    /*aca configuro el tamaño de la imagen, teniendo en cuenta la clase anterior*/
+    width: 100%;
+    display: inline; }
+  /* ---------- ESTO ES EL ESTILO DE LA LEYENDA "PAUSA. TIENDITA DE COSAS" ----------*/
+  .leyendaCentral {
+    /*text-align: center;*/
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between; }
+  #pausa {
+    /*padding-top: 20%;*/
+    font-family: "amsterdam-two";
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin: auto;
+    color: #c1b38a;
+    /*position: absolute; */ }
+  @keyframes neonAnim {
+    from {
+      text-shadow: 0 0 30px rgba(231, 196, 93, 0.7), 0 0 60px rgba(231, 196, 93, 0.7), 0 0 120px rgba(231, 196, 93, 0.7); }
+    to {
+      text-shadow: 0 0 25px rgba(231, 196, 93, 0.7), 0 0 40px rgba(231, 196, 93, 0.7), 0 0 80px rgba(231, 196, 93, 0.7); } }
+  #tiendita {
+    width: 100%;
+    margin: 0 50% 0 0;
+    color: lightgray;
+    /*position: relative;*/
+    font-family: spirqual;
+    font-size: 1.1rem;
+    font-weight: bold;
+    word-spacing: 1px;
+    letter-spacing: 3.5px; }
+  /*------------------------        ESTO ES EL ICONO DEL CARRITO Y DEL USUARIO         -----------------------*/
+  .margenDerecho {
+    width: 10%;
+    margin-right: 1.5%;
+    /*display: flex;*/
+    /*justify-content: space-between*/ }
+  .margenDerecho ul {
+    /*ESTO ES PARA DAR ESTILO A LOS BOTONES DEL CARRITO Y DEL USUARIO*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none; }
+  /*------------       ACA EMPIEZO A DARLE FORMA AL MENU "NAV" como menu diferenciado dentro del propio HEADER       --------------*/
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .navegacion {
+    /*    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);    */
+    width: 30%;
+    margin: auto;
+    height: 2.9vw;
+    background-color: #C98A3B;
+    opacity: 85%;
+    border-radius: 0px 0px 45px 45px;
+    display: flex; }
+  .navegacion ul {
+    list-style: none;
+    margin: auto; }
+  .menu > li {
+    /*de esta manera le estamos diciendo que queremos que se aplique este estilo unicamente al primer <li> que aparece en el menu, no a los subsiguientes <li> que puedan aparecer en el resto del menu*/
+    position: relative;
+    display: inline-block;
+    /*de esta manera los elementos del menu principal se verán uno al lado del otro*/ }
+  .menu > li > a {
+    /*de esta manera le estamos diciendo que queremos que se aplique este estilo unicamente a los primeros elementos <a> que están dentro de este <li> que aparece en el menu, no a los subsiguientes <a> <li> que puedan aparecer en el resto del menu. Es una forma de dar estilos a ciertos elementos en particular, por medio de padre-hijos. En este caso acá estamos tocando el texto del menu, a trav´s de los <li>*/
+    display: block;
+    padding: 7% 20px;
+    /*--- aca configuramos la distancia entre el submenu productos y el resto del menu nav  ---*/
+    color: white;
+    font-family: "Josh";
+    font-weight: bold;
+    text-decoration: none; }
+  #productos {
+    display: none; }
+  /*------------     HOVER    ------------*/
+  .menu li a:hover {
+    /*de esta manera este hover se aplicará A TODOS los elementos <li>, y sus <a>. Es decir que SE APLICA a las PALABRAS DEL MENU. El hover son unos estilos secundarios que se activan cuando el cursor se posiciona sobre los elementos indicados en este estilo*/
+    color: #F4C3B4;
+    transition: all .3s;
+    background-color: #302f2f;
+    border-radius: 5px; }
+  /*-------------------    ACA EMPIEZO A DARLE FORMA AL SUBMENU QUE SE DESPLIEGA EN "PRODUCTOS"    ----------------------*/
+  .submenu {
+    position: absolute;
+    background-color: #414060;
+    width: 105%;
+    display: none;
+    border-radius: 0px 0px 15px 15px;
+    padding-top: 7px; }
+  .submenu li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    font-family: "Josh";
+    text-decoration: none;
+    text-align: left; }
+  /*------------   HOVER    -----------*/
+  .menu li:hover .submenu {
+    display: block; }
+  /*--------------------------------------------------------*/
+  /*---------   CATEGORIAS DE PRODUCTOS    -----------------*/
+  .textcategorias > p {
+    /*font-size: calc(1.5em + 1vw);*/
+    font-size: 1.8rem;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    /*padding-left: 1.8em;*/
+    /*padding-top: 1.5em;*/
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: "Josh";
+    color: white;
+    /*position: relative;*/ }
+  /*-----------------   tarjetas de productos    --------------------*/
+  .cardsproductos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0% 0% 0;
+    padding: 0%; }
+  .productCat {
+    /*-------  ACÁ CONFIGURO CÓMO SERÁ EL CONTENDOR DE CADA TARJETA/CATEGORIA  --------*/
+    width: 17%;
+    border-color: #c1b38a;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0% 0% 0% 0%;
+    /*------como no se funka el align de la linea 81, lo configure manualmente------- */
+    border-radius: 15px;
+    justify-content: space-evenly;
+    background: #ececec;
+    align-items: center; }
+  .productCat:hover {
+    transition: width 0.5s;
+    width: 18.5%;
+    -webkit-box-shadow: 0px 1px 28px 16px #e7c45d;
+    -moz-box-shadow: 0px 1px 28px 16px #e7c45d;
+    box-shadow: 0px 1px 28px 16px #e7c45d; }
+  .resize {
+    /*-----    redimensiono todas las imagenes botoneras   -----*/
+    width: 100%;
+    border-radius: 15px 15px 0 0; }
+  .productCat__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px; }
+  .textCard {
+    font-family: "Adan_sans";
+    color: black;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none; }
+  /* ---------------------   SOCIAL BAR   -------------------*/
+  .socialBar {
+    position: fixed;
+    right: 50%;
+    top: 78%;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    margin-right: 3%; }
+  .socialBar a {
+    max-width: 16px;
+    max-height: 16px; }
+  /*--------------------    FOOTER      ------------------------------------*/
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2C2918;
+    opacity: 85%;
+    font-size: 0.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; }
+  .containerul {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    order: -1;
+    font-size: 1.5rem; }
+  .footer ul li {
+    list-style: none;
+    margin-top: 2%; }
+  .footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; }
+  .footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.35rem; }
+  .footer a:hover {
+    color: yellow;
+    transition: all .3s; }
+  .contact {
+    width: 10%;
+    margin-left: auto;
+    /*importante para alinear los 2 elementos listas del footer*/
+    margin-right: 4%; }
+  .contact > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; } }

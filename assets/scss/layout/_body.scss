@@ -1,0 +1,56 @@
+body {
+    min-height: 100%;
+}
+
+.body_style {
+    font-family: "Public Sans", sans-serif;
+    min-height: 100%;
+    background-image: url("../../img/hoja1.jpg");
+    /*background-size: cover;*/
+    /*background-position: center center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-color: black;*/
+    /*hasta aca le dimos cuestiones de forma a la imagen que se usa de fondo en la pagina*/
+}
+
+
+/*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
+.reference {
+    font-size: $size_text_category;
+    font-family: "Josh";
+    text-align: center;
+    color: $main_reference_category;
+    /*padding-top: 1em;*/
+    /*padding-bottom: 0.5em;*/
+}
+
+
+/* --------------------------------           MEDIA QUERIES            ----------------------------------*/
+
+
+
+
+
+@media (min-width:400px) and (max-width:600px) {
+
+    /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
+    .reference {
+        font-size: $size_s_text_category;
+    }
+}
+
+@media (min-width:601px) and (max-width:799px) {
+    /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
+    .reference {
+        font-size: $size_m_text_category;
+    }
+
+}
+
+@media (min-width:800px) and (max-width:1023px) {
+    /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
+    .reference {
+    font-size: $size_l_text_category;
+    }
+}

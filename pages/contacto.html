@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css"> <!-- Linkeado externo a pagina de estilos CSS-->
+    <title>PAUSA - CONTACTO</title> <!-- Esto sirve para nombra la pestaña del navegador-->
+    <link rel="icon" href="../assets/img/pausa_favicon_small.png">
+</head>
+
+<body>
+    <!-----------------------------------------         ENCABEZADO           ---------------------------------------->
+    <header>
+        <div class="brand">
+            <a href="./../index.html"><img src="./../assets/img/Logo_tiendita_pausa_sin_fondo.png" alt="Logo Pausa"></a>
+        </div>
+        <div class="leyendaCentral">
+            <h1>
+                <p>Pausa</p>
+            </h1>
+            <h4>
+                <p> Tiendita de Cosas</p>
+            </h4>
+        </div>
+        <div class="margenDerecho">
+            <ul>
+                <!-- Esta lista va por fuera de la otra lista anterior porque con CSS tendrá un tratamiento distinto-->
+                <li><a href="./../pages/cuenta.html"><img src="./../assets/img/usuario_small.svg" alt="cuenta"></a></li>
+                <li><a href="./../pages/carrito.html"><img src="./../assets/img/carrito_small.svg" alt=""></a></li>
+            </ul>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <nav class="navegacion">
+                <!---------------       MENU DE NAVEGACIÓN          -------------->
+                <!-- EL MENU NAV LO HICE DENTRO DEL BODY PARA DARLE ESE EFECTO DE SUPERPOSICIÓN DEL MENU "NAV" SOBRE LA IMAGEN QUE SE USA COMO FONDO DEL BODY-->
+                <ul class="menu">
+                    <li><a href="./../index.html">Inicio</a></li>
+                    <li><a href="./../pages/productos.html">Productos</a>
+                        <ul class="submenu">
+                            <li><a href="./../pages/cosmetica_natural.html">Cosmética Natural</a></li>
+                            <!--REELINKEAR A NUEVO NOMBRE-->
+                            <li><a href="./../pages/ceramica.html">Cerámica</a></li>
+                            <li><a href="./../pages/mates.html">Mates</a></li>
+                            <li><a href="./../pages/hilos.html">Hilos</a></li>
+                        </ul>
+                    <li><a href="./../pages/nosotros.html">Nosotros</a></li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!----------------------------         EN CONSTRUCCIÓN           ---------------------------->
+        <section>
+            <h1>CONTACTO</h1>
+            <P>Deje su mensaje. A la brevedad nos estaremos comunicando.</P>
+        </section>
+        <div>
+            <form action="" method="post"></form>
+        </div>
+            <div>
+                <label for="Nombre">Nombre y Apellido</label>
+                <input type="text" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Correo Electrónico</label>
+                <input type="mail" required>
+            </div>
+            <br>
+            <div>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar mensaje">
+            </div>
+        
+        <!-----------------------------------------    SOCIAL BAR DENTRO DEL MAIN   ---------------------------------------->
+        <aside class="socialBar">
+            <a href="https://www.instagram.com/tienditapausa/?hl=es-la" class="iconInsta" target="_blank"><img
+                    src="./../assets/img/instagram_small.png" alt="instagram"></a>
+        </aside>
+
+    </main>
+    <!-----------------------------------------           PIE DE PÁGINA           ---------------------------------------->
+    <footer class=pie>
+        <div>
+            <div style="margin-top: 1.5%; margin-bottom: 1.5%;">
+                <ul>
+                    <li><a href="./../pages/privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="./../pages/tyc.html">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#">Contacto</a>
+    </footer>
+
+</body>
+
+</html>

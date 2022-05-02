@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid main</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="./assets/img/pausa_favicon_small.png"> <!-- FAVICON-->
+</head>
+
+<body class="container-fluid">
+    <!-------HEADER-------->
+    <div class="row header">
+
+        <div class="col-3 logoContainer">
+            <a href="#";><img src="./assets/img/Logo Tiendita Pausa 400px SVG.svg" alt="Logo Pausa"
+                    class="img-fluid" id="sizeLogo"></a>
+        </div>
+
+        <div class="col-6" 
+        <p id="pausa">
+            Pausa
+            </p>
+            <p id="tiendita">
+                Tiendita de Cosas
+            </p>
+        </div>
+
+        <div class="col-3 stileRight">
+            <ul>
+                <li><a href="./pages/cuenta.html"><img src="./assets/img/icon_user_48px_f4c3b4.png" alt="cuenta"></a>
+                </li>
+                <li><a href="./pages/carrito.html"><img src="./assets/img/icon_cart_32px_f4c3b4.png" alt="carrito"></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <!--------------------------------------------------------------------------------------------------->
+    <main id="main">
+        <div class="row">
+
+            <nav class="topnav" id="myTopnav">
+                <a href="./../index.html">Inicio</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Productos
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./ceramica.html">Cerámica</a>
+                        <a href="./cosmetica_natural.html">Cosmética Natural</a>
+                        <a href="./hilos.html">Hilos</a>
+                        <a href="./mates.html">Mates</a>
+                    </div>
+                </div>
+                <a href="#about">Nosotros</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </nav>
+
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+        <div class="row">
+            <p>Categorias de Productos</p>
+        </div>
+        <!-------------------------------------------------------------------------------------------->
+        <div class="row d-flex flex-row justify-content-evenly align-items-center cardsproductos">
+            <!--<div class="cardsproductos">-->
+            <!-----     CONTENEDOR GENERAL DE LOS OTROS     ---->
+            <div class="productCat p-0">
+                <a href="pages/cosmetica_natural.html" class="textCard">
+                    <div class="productCat__img">
+                        <img class="resize img-fluid" src="assets/img/foto_cosmetica_prueba.png"
+                            alt="Cosmética Natural">
+                    </div>
+                    <div class="productCat__text">
+                        <p class="textCard">COSMETICA NATURAL</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="productCat p-0">
+                <a href="pages/ceramica.html" class="textCard">
+                    <div class="productCat__img">
+                        <img class="resize img-fluid" src="assets/img/foto_ceramica_prueba.png" alt="Cerámica">
+                    </div>
+                    <div class="productCat__text">
+                        <p class="textCard">CERAMICA</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="productCat p-0">
+                <a href="pages/mates.html" class="textCard">
+                    <div class="productCat__img">
+                        <img class="resize img-fluid" src="assets/img/foto_mates_prueba.png" alt="Mates">
+                    </div>
+                    <div class="productCat__text">
+                        <p class="textCard">MATES PAUSA</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="productCat p-0">
+                <a href="pages/hilos.html" class="textCard">
+                    <div class="productCat__img">
+                        <img class="resize img-fluid" src="assets/img/foto_hilos_prueba.png" alt="Hilos">
+                    </div>
+                    <div class="productCat__text">
+                        <p class="textCard">HILOS<p>
+                    </div>
+                </a>
+            </div>
+
+
+            <aside class="socialBar">
+                <a href="https://www.instagram.com/tienditapausa/?hl=es-la" class="iconInsta" target="_blank"><img
+                        src="./assets/img/instagram_small.png" alt="instagram"></a>
+            </aside>
+
+            <!--</div>-->
+        </div>
+
+        <div class="row d-flex flex-row justify-content-evenly align-items-center">
+
+            <div class="containerul">
+                <ul>
+                    <li><a href="./pages/privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="./pages/tyc.html">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <ul>
+                    <img src="./assets/img/icon_letter_24px_f4c3b4.png" alt="Contacto">
+                    <a href="./pages/contacto.html">Contacto</a>
+                </ul>
+            </div>
+        </div>
+
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
