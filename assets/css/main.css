@@ -164,38 +164,51 @@ img {
 
 /*----------------------------*/
 @media (min-width: 601x) and (max-width: 799px) {
+  .header_style_default .logo_container {
+    width: 5%; }
   .header_style_default .brand_container #pausa {
     /*min-height: min-content;*/
     width: inherit;
     font-size: 2em;
     height: 40px; }
   .header_style_default .brand_container #tiendita {
-    font-size: 1.8em; } }
-
-.margenDerecho {
-  display: inline; }
+    font-size: 1.8em; }
+  .margenDerecho {
+    display: inline; } }
 
 /*----------------------------------*/
 @media (min-width: 800px) and (max-width: 1023px) {
+  .header_style_default .logo_container {
+    width: 15%; }
+  .header_style_default .brand_container {
+    margin: 0; }
   .header_style_default .brand_container #pausa {
     /*min-height: min-content;*/
     width: inherit;
     font-size: 2.2em;
     height: 40px; }
   .header_style_default .brand_container #tiendita {
-    font-size: 2em; }
+    font-size: 2em;
+    width: 30%;
+    margin: 0 auto; }
   .margenDerecho {
     display: inline; } }
 
 /*--------------------------------*/
 @media (min-width: 1024px) {
+  .header_style_default .logo_container {
+    width: 15%; }
+  .header_style_default .brand_container {
+    margin: 0; }
   .header_style_default .brand_container #pausa {
     /*min-height: min-content;*/
     width: inherit;
-    font-size: 3.5em;
+    font-size: 2.6em;
     height: 40px; }
   .header_style_default .brand_container #tiendita {
-    font-size: 2.2em; }
+    font-size: 2.1em;
+    width: 30%;
+    margin: 0 auto; }
   .margenDerecho {
     display: inline; } }
 
@@ -215,7 +228,7 @@ body {
 
 /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
 .reference {
-  font-size: 3.2rem;
+  font-size: 3.2em;
   font-family: "Josh";
   text-align: center;
   color: white;
@@ -226,22 +239,27 @@ body {
 @media (min-width: 400px) and (max-width: 600px) {
   /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
   .reference {
-    font-size: 3.6rem; } }
+    font-size: 3.6em; } }
 
 @media (min-width: 601px) and (max-width: 799px) {
   /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
   .reference {
-    font-size: 4.1rem; } }
+    font-size: 4.1em; } }
 
 @media (min-width: 800px) and (max-width: 1023px) {
   /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
   .reference {
-    font-size: 4.7rem; } }
+    font-size: 4.7em; } }
 
-@media (min-width: 800px) and (max-width: 1023px) {
+@media (min-width: 1024px) {
   /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
   .reference {
-    font-size: 5.1rem; } }
+    font-size: 4.5em;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; } }
 
 /*-------------------------------      CONTENEDOR DE TODAS LAS TARJETAS DE PRODUCTOS EN MOBILE FIRST      -------------------------*/
 .galery_products_container {
@@ -444,6 +462,30 @@ div.image_product {
   /*flex-direction: column;*/
   /*z-index: 100;*/
   /*float: right;*/ }
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .social_bar {
+    position: fixed;
+    left: 91%;
+    top: 58%; } }
+
+@media (min-width: 601px) and (max-width: 799px) {
+  .social_bar {
+    position: fixed;
+    left: 93%;
+    top: 58%; } }
+
+@media (min-width: 800px) and (max-width: 1023px) {
+  .social_bar {
+    position: fixed;
+    left: 58%;
+    top: 58%; } }
+
+@media (min-width: 1024px) {
+  .social_bar {
+    position: fixed;
+    left: 96%;
+    top: 58%; } }
 
 .pie {
   height: 100%;

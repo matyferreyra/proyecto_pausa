@@ -78,6 +78,10 @@
 /*----------------------------*/
 
 @media (min-width:601x) and (max-width:799px) {
+
+    .header_style_default .logo_container {
+        width: 5%;
+    }
     .header_style_default .brand_container #pausa {
         /*min-height: min-content;*/
         width: inherit;
@@ -88,17 +92,25 @@
     .header_style_default .brand_container #tiendita {
         font-size: $size_text_m_tiendita;
     }
-}
 
-.margenDerecho {
-    display: inline;
-}
+    .margenDerecho {
+        display: inline;
+    }
 
+}
 
 
 /*----------------------------------*/
 
 @media (min-width:800px) and (max-width:1023px) {
+    .header_style_default .logo_container {
+        width: 15%;
+    }
+
+    .header_style_default .brand_container {
+        margin: 0;
+    }
+    
     .header_style_default .brand_container #pausa {
         /*min-height: min-content;*/
         width: inherit;
@@ -108,6 +120,8 @@
 
     .header_style_default .brand_container #tiendita {
         font-size: $size_text_l_tiendita;
+        width: 30%;
+        margin: 0 auto;
     }
 
     .margenDerecho {
@@ -118,6 +132,14 @@
 /*--------------------------------*/
 
 @media (min-width:1024px) {
+    .header_style_default .logo_container {
+        width: 15%;
+    }
+
+    .header_style_default .brand_container {
+        margin: 0;
+    }
+
     .header_style_default .brand_container #pausa {
         /*min-height: min-content;*/
         width: inherit;
@@ -127,6 +149,8 @@
 
     .header_style_default .brand_container #tiendita {
         font-size: $size_text_xl_tiendita;
+        width: 30%;
+        margin: 0 auto;
     }
 
     .margenDerecho {

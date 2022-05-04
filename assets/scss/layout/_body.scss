@@ -17,7 +17,7 @@ body {
 
 /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
 .reference {
-    font-size: $size_text_category;
+    font-size: $size_xs_text_category;
     font-family: "Josh";
     text-align: center;
     color: $main_reference_category;    
@@ -57,10 +57,15 @@ body {
     }
 }
 
-@media (min-width:800px) and (max-width:1023px) {
+@media (min-width:1024px) {
 
     /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
     .reference {
         font-size: $size_xl_text_category;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
     }
 }

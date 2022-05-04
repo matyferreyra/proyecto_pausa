@@ -9,12 +9,34 @@
 }
 
 
-@media (min-width:400px) and (max-width:600px) {}
+@media (min-width:400px) and (max-width:600px) {
+    .social_bar {
+        position: fixed;
+        left: 91%;
+        top: 58%;
+    }
+}
 
-@media (min-width:601px) and (max-width:799px) {}
+@media (min-width:601px) and (max-width:799px) {
+    .social_bar {
+        position: fixed;
+        left: 93%;
+        top: 58%;
+    }
+}
 
-@media (min-width:800px) and (max-width:1023px) {}
+@media (min-width:800px) and (max-width:1023px) {
+    .social_bar {
+        position: fixed;
+        left: 58%;
+        top: 58%;
+    }
+}
 
-@media (min-width:1024px) and (max-width:1199px) {}
-
-@media (min-width:1200px) {}
+@media (min-width:1024px) {
+    .social_bar {
+        position: fixed;
+        left: 96%;
+        top: 58%;
+    }
+}
