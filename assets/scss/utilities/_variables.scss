@@ -1,59 +1,124 @@
-
 /*-------------- HEADER  -----------*/
 $header_background_color: #414060;
-$header_text_pausa: #ebd595;
-$header_text_tiendita: lightgray;
+
+/*TEXTO "PAUSA"*/
+$font_family_text_pausa: "amsterdam-two";
+$font_weigth_text_pausa: bold;
+$margin_text_pausa: auto;
+$header_color_text_pausa: #ebd595;
+$margin_text_pausa: auto;
+$size_text_xs_pausa: 1.6rem;
+/*DEFAULT*/
+$size_text_s_pausa: 1.8rem;
+/*400-600PX*/
+$size_text_m_pausa: 2rem;
+/*601-799PX*/
+$size_text_l_pausa: 2.2rem;
+/*800-1023PX*/
+$size_text_xl_pausa: 2.4rem;
+/*1024PX->*/
+
+
+/*TEXTO "TIENDITA"*/
+$header_color_text_tiendita: lightgray;
+$size_text_xs_tiendita: 1.4rem;
+/*DEFAULT*/
+$size_text_s_tiendita: 1.6rem;
+/*400-600PX*/
+$size_text_m_tiendita: 1.8rem;
+/*601-799PX*/
+$size_text_l_tiendita: 2rem;
+/*800-1023PX*/
+$size_text_xl_tiendita: 2.2rem;
+/*1024PX->*/
 
 /*-------------- NAVBAR  -----------*/
 $navbar_background_color: #C98A3B;
 
-/*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
+/*-----------------------------      CONFIGURACIÓN TEXTO CATEGORIA MATES/CERAMICA/HILOS/COMESTICA     -----------------------------*/
 $main_reference_category: white;
 $size_text_category: 3.2rem;
 $size_xs_text_category: 3.2rem;
+/*DEFAULT*/
 $size_s_text_category: 3.6rem;
-$size_m_text_category: 6.8em;
-$size_l_text_category: 7.5rem;
+/*400-600PX*/
+$size_m_text_category: 4.1rem;
+/*601-799PX*/
+$size_l_text_category: 4.7rem;
+/*800-1023PX*/
+$size_xl_text_category: 5.1rem;
+/*1024PX->*/
+
 
 
 /*-------------- CONFIGURACION DE LAS TARJETAS  -----------*/
+
+/*-------------- ANCHO DE CADA TARJETA --------------*/
+$width_card: 80%;
+/*0 a 799px*/
+$width_card_plus: 90%;
+/*800px -> */
 
 
 /*CONFIG TEXTO TITULO TARJETA PRODUCTOS*/
 $color_title_product: lightgray;
 $size_xs_title_product: 2.3em;
+/*DEFAULT*/
 $style_title_product: center;
 $weight_title_product: bold;
 
-$size_s_title_product: 2.8em; /*400-600PX*/
-$size_m_title_product: 3.3em; /*601-799PX*/
-$size_l_title_product: 3.7em; /*800-1023PX*/
-$size_xl_title_product: 4.1em; /*1024PX->*/
+$size_s_title_product: 2.8em;
+/*400-600PX*/
+$size_m_title_product: 3.3em;
+/*601-799PX*/
+$size_l_title_product: 3.7em;
+/*800-1023PX*/
+$size_xl_title_product: 4.1em;
+/*1024PX->*/
 
 /*CONFIG TEXTO DESCRIPCION TARJETA PRODUCTOS*/
 $color_descript_product: lightgray;
 $size_xs_descript_product: 1.4em;
+/*DEFAULT*/
 $style_title_product: center;
 $weight_title_product: bold;
 $style_descript_product: justify;
 
-$size_s_descript_product: 1.7em; /*400-600PX*/
-$size_m_descript_product: 1.8em; /*601-799PX*/
-$size_l_descript_product: 1.9em; /*800-1023PX*/
-$size_xl_descript_product: 2.1em; /*1024PX->*/
+$size_s_descript_product: 1.7em;
+/*400-600PX*/
+$size_m_descript_product: 1.8em;
+/*601-799PX*/
+$size_l_descript_product: 1.9em;
+/*800-1023PX*/
+$size_xl_descript_product: 2.1em;
+/*1024PX->*/
+
+/*CONFIG ANCHO CONTENEDOR IMAGEN TARJETA PRODUCTOS*/
+$size_img_product:100%;
+
 
 
 /*-------------- CONFIGURACION DEl FOOTER  -----------*/
 $footer_background_color: #2C2918;
-$footer_size_left: 1.6em; 
+$footer_size_left: 1.6em;
+/*POLÍTICA DE PRIVACIDAD Y TERMINOS Y CONDICIONES*/
 $footer_size_right: 1.8em;
+/*CONTACTO*/
 
 $footer_size_s_left: 1.75em;
+/*400-600PX*/
 $footer_size_m_left: 1.85em;
+/*601-799PX*/
 $footer_size_l_left: 1.95em;
+/*800-1023PX*/
 $footer_size_l_left: 2.05em;
+/*1024PX->*/
 
-$footer_size_s_right: 1.95em; 
-$footer_size_m_right: 2.05em; 
-$footer_size_l_right: 2.15em; 
-$footer_size_l_right: 2.25em; 
+$footer_size_s_right: 1.95em;
+/*400-600PX*/
+$footer_size_m_right: 2.05em;
+/*601-799PX*/
+$footer_size_l_right: 2.15em;
+/*800-1023PX*/
+$footer_size_l_right: 2.25em;
+/*1024PX->*/

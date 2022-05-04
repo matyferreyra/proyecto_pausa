@@ -1,19 +1,52 @@
 @charset "UTF-8";
 /*-------------- HEADER  -----------*/
+/*TEXTO "PAUSA"*/
+/*DEFAULT*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
+/*TEXTO "TIENDITA"*/
+/*DEFAULT*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
 /*-------------- NAVBAR  -----------*/
-/*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
+/*-----------------------------      CONFIGURACIÓN TEXTO CATEGORIA MATES/CERAMICA/HILOS/COMESTICA     -----------------------------*/
+/*DEFAULT*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
 /*-------------- CONFIGURACION DE LAS TARJETAS  -----------*/
+/*-------------- ANCHO DE CADA TARJETA --------------*/
+/*0 a 799px*/
+/*800px -> */
 /*CONFIG TEXTO TITULO TARJETA PRODUCTOS*/
+/*DEFAULT*/
 /*400-600PX*/
 /*601-799PX*/
 /*800-1023PX*/
 /*1024PX->*/
 /*CONFIG TEXTO DESCRIPCION TARJETA PRODUCTOS*/
+/*DEFAULT*/
 /*400-600PX*/
 /*601-799PX*/
 /*800-1023PX*/
 /*1024PX->*/
+/*CONFIG ANCHO CONTENEDOR IMAGEN TARJETA PRODUCTOS*/
 /*-------------- CONFIGURACION DEl FOOTER  -----------*/
+/*POLÍTICA DE PRIVACIDAD Y TERMINOS Y CONDICIONES*/
+/*CONTACTO*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap");
 .RESET {
   box-sizing: border-box;
@@ -98,72 +131,70 @@ img {
     margin: auto; }
     .header_style_default .brand_container #pausa {
       font-family: "amsterdam-two";
-      font-size: 1.8rem;
+      font-size: 1.6rem;
+      color: #ebd595;
       /*10rem * 10px= 100px*/
       font-weight: bold;
       margin: auto;
-      /*color: #c1b38a;*/
-      /*width: 100%;*/
-      animation: neonAnim 2s alternate-reverse infinite;
-      color: #ebd595; }
-
-@keyframes neonAnim {
-  from {
-    text-shadow: 0 0 30px rgba(231, 196, 93, 0.7), 0 0 60px rgba(231, 196, 93, 0.7), 0 0 120px rgba(231, 196, 93, 0.7); }
-  to {
-    text-shadow: 0 0 25px rgba(231, 196, 93, 0.7), 0 0 40px rgba(231, 196, 93, 0.7), 0 0 80px rgba(231, 196, 93, 0.7); } }
-    .header_style_default .brand_container #tiendita {
-      width: 100%;
-      margin: 0.75% 0% 0% 0%;
-      color: lightgray;
-      /*position: relative;*/
-      font-family: spirqual;
-      font-size: 1.5rem;
-      font-weight: bold;
-      word-spacing: 0.2em;
-      letter-spacing: 0.35em; }
-  .header_style_default .margenDerecho {
-    display: none; }
+      animation: neonAnim 2s alternate-reverse infinite; }
+      .header_style_default .brand_container #pausa #tiendita {
+        width: 100%;
+        margin: 0.75% 0% 0% 0%;
+        color: lightgray;
+        /*position: relative;*/
+        font-family: spirqual;
+        font-size: 1.4rem;
+        font-weight: bold;
+        word-spacing: 0.2em;
+        letter-spacing: 0.35em; }
+    .header_style_default .brand_container .margenDerecho {
+      display: none; }
 
 /* --------------------------------           MEDIA QUERIES            ----------------------------------*/
 @media (min-width: 400px) and (max-width: 600px) {
   #pausa {
     /*min-height: min-content;*/
     width: inherit;
-    font-size: 150px;
+    font-size: 1.8rem;
     height: 40px; }
   #tiendita {
-    font-size: 1.5rem; } }
+    font-size: 1.6rem; } }
 
 /*----------------------------*/
 @media (min-width: 601x) and (max-width: 799px) {
   #pausa {
     /*min-height: min-content;*/
     width: inherit;
-    font-size: 150px;
+    font-size: 2rem;
     height: 40px; }
   #tiendita {
-    font-size: 1.5rem; } }
+    font-size: 1.8rem; }
+  .margenDerecho {
+    display: inline; } }
 
 /*----------------------------------*/
 @media (min-width: 800px) and (max-width: 1023px) {
   #pausa {
     /*min-height: min-content;*/
     width: inherit;
-    font-size: 150px;
+    font-size: 2.2rem;
     height: 40px; }
   #tiendita {
-    font-size: 1.5rem; } }
+    font-size: 2rem; }
+  .margenDerecho {
+    display: inline; } }
 
 /*--------------------------------*/
 @media (min-width: 1024px) {
   #pausa {
     /*min-height: min-content;*/
     width: inherit;
-    font-size: 150px;
+    font-size: 2.4rem;
     height: 40px; }
   #tiendita {
-    font-size: 1.5rem; } }
+    font-size: 2.2rem; }
+  .margenDerecho {
+    display: inline; } }
 
 body {
   min-height: 100%; }
@@ -197,12 +228,17 @@ body {
 @media (min-width: 601px) and (max-width: 799px) {
   /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
   .reference {
-    font-size: 6.8em; } }
+    font-size: 4.1rem; } }
 
 @media (min-width: 800px) and (max-width: 1023px) {
   /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
   .reference {
-    font-size: 7.5rem; } }
+    font-size: 4.7rem; } }
+
+@media (min-width: 800px) and (max-width: 1023px) {
+  /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
+  .reference {
+    font-size: 5.1rem; } }
 
 /*-------------------------------      CONTENEDOR DE TODAS LAS TARJETAS DE PRODUCTOS EN MOBILE FIRST      -------------------------*/
 .galery_products_container {
@@ -213,7 +249,7 @@ body {
 .cards_products_container {
   display: grid;
   grid-template-areas: "description " "image_product";
-  width: 80%;
+  width: width_card;
   grid-template-columns: repeat 1, min-content;
   /*grid-template-rows: repeat (auto, 1fr);*/
   grid-auto-rows: min-content;
@@ -289,6 +325,12 @@ div.image_product {
     justify-content: space-evenly;
     gap: 10% 0;
     margin: 5%; }
+    .cards_products_container:nth-child(even) div.description {
+      grid-column: 2;
+      /*margin-left: 4em;*/ }
+    .cards_products_container:nth-child(even) div.image_product {
+      grid-column: 1;
+      grid-row: 1; }
     .cards_products_container div.description {
       grid-area: description;
       display: flex;
@@ -344,6 +386,12 @@ div.image_product {
     justify-content: space-evenly;
     gap: 10% 0;
     margin: 5%; }
+    .cards_products_container:nth-child(even) div.description {
+      grid-column: 2;
+      /*margin-left: 4em;*/ }
+    .cards_products_container:nth-child(even) div.image_product {
+      grid-column: 1;
+      grid-row: 1; }
     .cards_products_container div.description {
       grid-area: description;
       display: flex;
