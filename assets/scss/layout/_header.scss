@@ -39,7 +39,7 @@
                 color: $header_color_text_tiendita;
                 /*position: relative;*/
                 font-family: spirqual;
-                font-size: $size_text_xs_tiendita;
+                /*font-size: $size_text_xs_tiendita;*/
                 font-weight: bold;
                 word-spacing: 0.2em;
                 letter-spacing: 0.35em;
@@ -52,77 +52,84 @@
     }
 }
 
-    /* --------------------------------           MEDIA QUERIES            ----------------------------------*/
+/* --------------------------------           MEDIA QUERIES            ----------------------------------*/
 
 
-    @media (min-width:400px) and (max-width:600px) {
-        #pausa {
-            /*min-height: min-content;*/
-            width: inherit;
-            font-size: $size_text_s_pausa;
-            height: 40px;
+@media (min-width:400px) and (max-width:600px) {
 
-        }
-
-        #tiendita {
-            font-size: $size_text_s_tiendita;
-        }
-        
+    .header_style_default .brand_container #pausa {
+        /*min-height: min-content;*/
+        width: inherit;
+        font-size: $size_text_s_pausa;
+        height: 40px;
     }
 
-    /*----------------------------*/
-
-    @media (min-width:601x) and (max-width:799px) {
-        #pausa {
-            /*min-height: min-content;*/
-            width: inherit;
-            font-size: $size_text_m_pausa;
-            height: 40px;
-        }
-
-        #tiendita {
-            font-size: $size_text_m_tiendita;
-        }
-
-        .margenDerecho {
-            display: inline;
-        }
+    .header_style_default .brand_container #tiendita {
+        font-size: $size_text_s_tiendita;
     }
 
-    /*----------------------------------*/
+    .header_style_default .brand_container .margenDerecho {
+        display: none;
+    }
+}
 
-    @media (min-width:800px) and (max-width:1023px) {
-        #pausa {
-            /*min-height: min-content;*/
-            width: inherit;
-            font-size: $size_text_l_pausa;
-            height: 40px;
-        }
 
-        #tiendita {
-            font-size: $size_text_l_tiendita;
-        }
 
-        .margenDerecho {
-            display: inline;
-        }
+/*----------------------------*/
+
+@media (min-width:601x) and (max-width:799px) {
+    .header_style_default .brand_container #pausa {
+        /*min-height: min-content;*/
+        width: inherit;
+        font-size: $size_text_m_pausa;
+        height: 40px;
     }
 
-    /*--------------------------------*/
-
-    @media (min-width:1024px) {
-        #pausa {
-            /*min-height: min-content;*/
-            width: inherit;
-            font-size: $size_text_xl_pausa;
-            height: 40px;
-        }
-
-        #tiendita {
-            font-size: $size_text_xl_tiendita;
-        }
-
-        .margenDerecho {
-            display: inline;
-        }
+    .header_style_default .brand_container #tiendita {
+        font-size: $size_text_m_tiendita;
     }
+}
+
+.margenDerecho {
+    display: inline;
+}
+
+
+
+/*----------------------------------*/
+
+@media (min-width:800px) and (max-width:1023px) {
+    .header_style_default .brand_container #pausa {
+        /*min-height: min-content;*/
+        width: inherit;
+        font-size: $size_text_l_pausa;
+        height: 40px;
+    }
+
+    .header_style_default .brand_container #tiendita {
+        font-size: $size_text_l_tiendita;
+    }
+
+    .margenDerecho {
+        display: inline;
+    }
+}
+
+/*--------------------------------*/
+
+@media (min-width:1024px) {
+    .header_style_default .brand_container #pausa {
+        /*min-height: min-content;*/
+        width: inherit;
+        font-size: $size_text_xl_pausa;
+        height: 40px;
+    }
+
+    .header_style_default .brand_container #tiendita {
+        font-size: $size_text_xl_tiendita;
+    }
+
+    .margenDerecho {
+        display: inline;
+    }
+}

@@ -131,7 +131,7 @@ img {
     margin: auto; }
     .header_style_default .brand_container #pausa {
       font-family: "amsterdam-two";
-      font-size: 1.6rem;
+      font-size: 1.6em;
       color: #ebd595;
       /*10rem * 10px= 100px*/
       font-weight: bold;
@@ -143,7 +143,7 @@ img {
         color: lightgray;
         /*position: relative;*/
         font-family: spirqual;
-        font-size: 1.4rem;
+        /*font-size: $size_text_xs_tiendita;*/
         font-weight: bold;
         word-spacing: 0.2em;
         letter-spacing: 0.35em; }
@@ -152,47 +152,50 @@ img {
 
 /* --------------------------------           MEDIA QUERIES            ----------------------------------*/
 @media (min-width: 400px) and (max-width: 600px) {
-  #pausa {
+  .header_style_default .brand_container #pausa {
     /*min-height: min-content;*/
     width: inherit;
-    font-size: 1.8rem;
+    font-size: 1.8em;
     height: 40px; }
-  #tiendita {
-    font-size: 1.6rem; } }
+  .header_style_default .brand_container #tiendita {
+    font-size: 1.6em; }
+  .header_style_default .brand_container .margenDerecho {
+    display: none; } }
 
 /*----------------------------*/
 @media (min-width: 601x) and (max-width: 799px) {
-  #pausa {
+  .header_style_default .brand_container #pausa {
     /*min-height: min-content;*/
     width: inherit;
-    font-size: 2rem;
+    font-size: 2em;
     height: 40px; }
-  #tiendita {
-    font-size: 1.8rem; }
-  .margenDerecho {
-    display: inline; } }
+  .header_style_default .brand_container #tiendita {
+    font-size: 1.8em; } }
+
+.margenDerecho {
+  display: inline; }
 
 /*----------------------------------*/
 @media (min-width: 800px) and (max-width: 1023px) {
-  #pausa {
+  .header_style_default .brand_container #pausa {
     /*min-height: min-content;*/
     width: inherit;
-    font-size: 2.2rem;
+    font-size: 2.2em;
     height: 40px; }
-  #tiendita {
-    font-size: 2rem; }
+  .header_style_default .brand_container #tiendita {
+    font-size: 2em; }
   .margenDerecho {
     display: inline; } }
 
 /*--------------------------------*/
 @media (min-width: 1024px) {
-  #pausa {
+  .header_style_default .brand_container #pausa {
     /*min-height: min-content;*/
     width: inherit;
-    font-size: 2.4rem;
+    font-size: 3.5em;
     height: 40px; }
-  #tiendita {
-    font-size: 2.2rem; }
+  .header_style_default .brand_container #tiendita {
+    font-size: 2.2em; }
   .margenDerecho {
     display: inline; } }
 
