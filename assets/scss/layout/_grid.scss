@@ -75,6 +75,11 @@
 
 
 @media (min-width:400px) and (max-width:600px) {
+    
+    .cards_products_container{
+        width: $width_card;        
+    }
+    
     .cards_products_container div.description h1 {
         font-size: $size_s_title_product;
     }
@@ -87,6 +92,13 @@
 /*-----------------------------------------------------------------------*/
 
 @media (min-width:601px) and (max-width:799px) {
+    
+    .cards_products_container{
+        width: $width_card;
+        gap: 0;
+        /*margin: 0 7.5%;*/
+    }
+    
     .cards_products_container div.description h1 {
         font-size: $size_m_title_product;
     }

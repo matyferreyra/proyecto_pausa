@@ -33,18 +33,18 @@
             margin: $margin_text_pausa;
             animation: $neon_light_shadow;
 
-            #tiendita {
-                width: 100%;
-                margin: 0.75% 0% 0% 0%;
-                color: $header_color_text_tiendita;
-                /*position: relative;*/
-                font-family: spirqual;
-                /*font-size: $size_text_xs_tiendita;*/
-                font-weight: bold;
-                word-spacing: 0.2em;
-                letter-spacing: 0.35em;
-            }
+        #tiendita {
+            width: 30%;
+            margin: 0.75% 0 0 0;
+            color: $header_color_text_tiendita;
+            /*position: relative;*/
+            font-family: spirqual;
+            /*font-size: $size_text_xs_tiendita;*/
+            font-weight: bold;
+            word-spacing: 0.2em;
+            letter-spacing: 0.35em;
         }
+    }
 
         .margenDerecho {
             display: none;
@@ -57,11 +57,15 @@
 
 @media (min-width:400px) and (max-width:600px) {
 
+    .header_style_default .logo_container {
+        width: 25%;
+    }
+
     .header_style_default .brand_container #pausa {
         /*min-height: min-content;*/
         width: inherit;
         font-size: $size_text_s_pausa;
-        height: 40px;
+        /*height: 40px;*/
     }
 
     .header_style_default .brand_container #tiendita {
@@ -80,8 +84,13 @@
 @media (min-width:601x) and (max-width:799px) {
 
     .header_style_default .logo_container {
-        width: 5%;
+        width: 15%;        
     }
+
+    .header_style_default .brand_container {
+        margin: 0;
+    }
+
     .header_style_default .brand_container #pausa {
         /*min-height: min-content;*/
         width: inherit;
@@ -91,12 +100,13 @@
 
     .header_style_default .brand_container #tiendita {
         font-size: $size_text_m_tiendita;
+        width: 30%;
+        margin: 0 auto;
     }
 
     .margenDerecho {
         display: inline;
     }
-
 }
 
 
@@ -104,7 +114,7 @@
 
 @media (min-width:800px) and (max-width:1023px) {
     .header_style_default .logo_container {
-        width: 15%;
+        width: 20%;
     }
 
     .header_style_default .brand_container {
