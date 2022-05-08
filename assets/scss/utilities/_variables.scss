@@ -9,11 +9,11 @@ $header_color_text_pausa: #ebd595;
 $margin_text_pausa: auto;
 $size_text_xs_pausa: 1.6em;
 /*DEFAULT*/
-$size_text_s_pausa: 1.8em;
+$size_text_s_pausa: 2.4em;
 /*400-600PX*/
-$size_text_m_pausa: 5em;
+$size_text_m_pausa: 2.6em;
 /*601-799PX*/
-$size_text_l_pausa: 2.2em;
+$size_text_l_pausa: 2.5em;
 /*800-1023PX*/
 $size_text_xl_pausa: 2.6em;
 /*1024PX->*/
@@ -23,9 +23,9 @@ $size_text_xl_pausa: 2.6em;
 $header_color_text_tiendita: lightgray;
 $size_text_xs_tiendita: 1.4em;
 /*DEFAULT*/
-$size_text_s_tiendita: 1.6em;
+$size_text_s_tiendita: 2em;
 /*400-600PX*/
-$size_text_m_tiendita: 1.8em;
+$size_text_m_tiendita: 2.1em;
 /*601-799PX*/
 $size_text_l_tiendita: 2em;
 /*800-1023PX*/
@@ -36,16 +36,16 @@ $size_text_xl_tiendita: 2.1em;
 $navbar_background_color: #C98A3B;
 
 /*-----------------------------      CONFIGURACIÓN TEXTO CATEGORIA MATES/CERAMICA/HILOS/COMESTICA     -----------------------------*/
-$main_reference_category: white;
-$size_xs_text_category: 3.2em;
+$main_reference_category: #914ac7;
+$size_xs_text_category: 3.3em;
 /*DEFAULT*/
-$size_s_text_category: 3.6em;
+$size_s_text_category: 3.75em;  
 /*400-600PX*/
-$size_m_text_category: 4.1em;
+$size_m_text_category: 4.2em;
 /*601-799PX*/
 $size_l_text_category: 4.7em;
 /*800-1023PX*/
-$size_xl_text_category: 4.5em;
+$size_xl_text_category: 5em;
 /*1024PX->*/
 
 
@@ -60,7 +60,7 @@ $width_card_plus: 90%;
 
 
 /*CONFIG TEXTO TITULO TARJETA PRODUCTOS*/
-$color_title_product: lightgray;
+$color_title_product:white;
 $size_xs_title_product: 2.3em;
 /*DEFAULT*/
 $style_title_product: center;
@@ -76,7 +76,7 @@ $size_xl_title_product: 4.1em;
 /*1024PX->*/
 
 /*CONFIG TEXTO DESCRIPCION TARJETA PRODUCTOS*/
-$color_descript_product: lightgray;
+$color_descript_product:white;
 $size_xs_descript_product: 1.4em;
 /*DEFAULT*/
 $style_title_product: center;
@@ -108,16 +108,16 @@ $footer_size_s_left: 1.75em;
 /*400-600PX*/
 $footer_size_m_left: 1.85em;
 /*601-799PX*/
-$footer_size_l_left: 1.95em;
+$footer_size_l_left: 1.85em;
 /*800-1023PX*/
-$footer_size_l_left: 2.05em;
+$footer_size_xl_left: 2.05em;
 /*1024PX->*/
 
-$footer_size_s_right: 1.95em;
+$footer_size_s_right: 2.10em;
 /*400-600PX*/
-$footer_size_m_right: 2.05em;
+$footer_size_m_right: 2.20em;
 /*601-799PX*/
-$footer_size_l_right: 2.15em;
-/*800-1023PX*/
 $footer_size_l_right: 2.25em;
+/*800-1023PX*/
+$footer_size_xl_right: 2.50em;
 /*1024PX->*/

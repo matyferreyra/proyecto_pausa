@@ -1,11 +1,23 @@
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
 body {
     min-height: 100%;
-}
+    background-image: url("../../../assets/img/manchas.jpg");        
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    /*hasta aca le dimos cuestiones de forma a la imagen que se usa de fondo en la pagina*/
+    }
 
 .body_style {
     font-family: "Public Sans", sans-serif;
     min-height: 100%;
-    background-image: url("../../img/hoja1.jpg");
+    // background-image: url("../../../assets/img/hoja1.jpg");
     /*background-size: cover;*/
     /*background-position: center center;*/
     /*background-repeat: no-repeat;*/
@@ -20,7 +32,13 @@ body {
     font-size: $size_xs_text_category;
     font-family: "Josh";
     text-align: center;
-    color: $main_reference_category;    
+    color: $main_reference_category;  
+    font-weight: bold;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     /*padding-top: 1em;*/
     /*padding-bottom: 0.5em;*/
 }
@@ -37,6 +55,11 @@ body {
     /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
     .reference {
         font-size: $size_s_text_category;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
     }
 }
 
@@ -45,6 +68,11 @@ body {
     /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
     .reference {
         font-size: $size_m_text_category;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
     }
 
 }
@@ -54,7 +82,12 @@ body {
     /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
     .reference {
         font-size: $size_l_text_category;
-    }
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }    
 }
 
 @media (min-width:1024px) {

@@ -1,5 +1,4 @@
 @import "utilities/variables";
-@import 'utilities/functions';
 
 @import 'base/reset';
 @import 'base/fonts';
@@ -11,10 +10,10 @@
 @import 'layout/body';
 @import 'layout/grid';
 @import 'layout/social_networks';
-@import 'layout/forms';
+//@import 'layout/forms';
 @import 'layout/footer';
 
 @import 'components/buttons';
 
-@import "views/home";
+//@import "views/home";
 //@import "views/products";

@@ -1,6 +1,6 @@
 .pie {
     height: 100%;
-    background-color: #2C2918;
+    background-color: #414060;
     opacity: 85%;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -52,7 +52,7 @@
 }
 
 .contact {
-    width: 8.5%;
+    /*width: 8.5%;*/
 
 }
 
@@ -82,7 +82,19 @@
 }
 
 @media (min-width:800px) and (max-width:1023px) {
+    .pie ul li a {
+        font-size: $footer_size_l_left;
+    }
+    .pie a {
+        font-size: $footer_size_l_right;
+    }
 }
 
 @media (min-width:1024px) {
+    .pie ul li a {
+        font-size: $footer_size_xl_left;
+    }
+    .pie a {
+        font-size: $footer_size_xl_right;
+    }
 }
