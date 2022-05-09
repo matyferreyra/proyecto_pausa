@@ -28,6 +28,25 @@ body {
 
 
 /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
+
+.container_nav{
+    border-style: solid !important;
+    border-width: 0.4em !important;
+    border-color:#ceccbf !important;
+    border-radius: 2em !important;
+    background-color: #ecd3bf!important;
+}
+
+.nav_prop{
+    width: 40%!important;
+    margin: auto !important;    
+}
+
+.color li a{
+    color: black!important;
+}
+
+
 .reference {
     font-size: $size_xs_text_category;
     font-family: "Josh";
