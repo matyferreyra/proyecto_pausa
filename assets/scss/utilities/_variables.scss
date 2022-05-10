@@ -36,7 +36,7 @@ $size_text_xl_tiendita: 2.1em;
 $navbar_background_color: #C98A3B;
 
 /*-----------------------------      CONFIGURACIÓN TEXTO CATEGORIA MATES/CERAMICA/HILOS/COMESTICA     -----------------------------*/
-$main_reference_category: #914ac7;
+$main_reference_category: #645993;
 $size_xs_text_category: 3.3em;
 /*DEFAULT*/
 $size_s_text_category: 3.75em;  
@@ -62,9 +62,9 @@ $width_card_plus: 90%;
 /*CONFIG TEXTO TITULO TARJETA PRODUCTOS*/
 $color_title_product:white;
 $size_xs_title_product: 2.3em;
-/*DEFAULT*/
 $style_title_product: center;
 $weight_title_product: bold;
+/*DEFAULT*/
 
 $size_s_title_product: 2.8em;
 /*400-600PX*/
@@ -78,10 +78,10 @@ $size_xl_title_product: 4.1em;
 /*CONFIG TEXTO DESCRIPCION TARJETA PRODUCTOS*/
 $color_descript_product:white;
 $size_xs_descript_product: 1.4em;
-/*DEFAULT*/
 $style_title_product: center;
 $weight_title_product: bold;
 $style_descript_product: justify;
+/*DEFAULT*/
 
 $size_s_descript_product: 1.7em;
 /*400-600PX*/
@@ -90,6 +90,23 @@ $size_m_descript_product: 1.8em;
 $size_l_descript_product: 1.9em;
 /*800-1023PX*/
 $size_xl_descript_product: 2.1em;
+/*1024PX->*/
+
+/*CONFIG TEXTO PRECIO TARJETA PRODUCTOS*/
+$color_price_product: rgb(65, 65, 65);
+$size_xs_price_product: 1.65em;
+$font_style_price: bold;
+$align_price_product: center;
+$margin_price: 0 auto;
+/*DEFAULT*/
+
+$size_s_price_product: 1.85em;
+/*400-600PX*/
+$size_m_price_product: 2.3em;
+/*601-799PX*/
+$size_l_price_product: 2.35em;
+/*800-1023PX*/
+$size_xl_price_product: 2.55em;
 /*1024PX->*/
 
 /*CONFIG ANCHO CONTENEDOR IMAGEN TARJETA PRODUCTOS*/

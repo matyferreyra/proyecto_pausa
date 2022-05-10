@@ -1,5 +1,5 @@
     $neon_light_shadow: neonAnim 2s alternate-reverse infinite;
-            
+
 
     @keyframes neonAnim {
         from {
@@ -8,29 +8,40 @@
                 0 0 60px rgba(231, 196, 93, .7),
                 0 0 120px rgba(231, 196, 93, .7);
         }
-    
+
         to {
             text-shadow:
                 0 0 25px rgba(231, 196, 93, .7),
                 0 0 40px rgba(231, 196, 93, .7),
                 0 0 80px rgba(231, 196, 93, .7);
         }
-    }  
+    }
 
-    div.description{
+    div.description {
         backdrop-filter: blur(5px) saturate(181%);
-            -webkit-backdrop-filter: blur(5px) saturate(181%);
-            background-color: rgba(103, 85, 109, 0.45);
-            border-radius: 12px;
-            border: 1px solid rgba(209, 213, 219, 0.3);
+        -webkit-backdrop-filter: blur(5px) saturate(181%);
+        background-color: rgba(103, 85, 109, 0.45);
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
     }
 
 
-/*-------------------------        EFECTO DEL BOTON "AGREGAR AL CARRO"         -------------------------*/
+    /*-------------------------        EFECTO DEL BOTON "AGREGAR AL CARRO"         -------------------------*/
+
+
+    .amount_items:hover:not(:disabled) {
+        background: #5ee45e;
+        color: whitesmoke;        
+    }
+
+    .amount_items:disabled {
+        cursor: auto;
+        color: #83ff83;
+    }
 
     .add_cart:hover:not(:disabled) {
-        background: #00b800;
-        color: white;        
+        background: #645993;
+        color: whitesmoke;        
     }
 
     .add_cart:disabled {

@@ -5,14 +5,14 @@ html {
 
 body {
     min-height: 100%;
-    background-image: url("../../../assets/img/manchas.jpg");        
+    background-image: url("../../../assets/img/manchas.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: black;
     /*hasta aca le dimos cuestiones de forma a la imagen que se usa de fondo en la pagina*/
-    }
+}
 
 .body_style {
     font-family: "Public Sans", sans-serif;
@@ -29,21 +29,21 @@ body {
 
 /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
 
-.container_nav{
+.container_nav {
     border-style: solid !important;
     border-width: 0.4em !important;
-    border-color:#ceccbf !important;
+    border-color: #ceccbf !important;
     border-radius: 2em !important;
-    background-color: #ecd3bf!important;
+    background-color: #ecd3bf !important;
 }
 
-.nav_prop{
-    width: 40%!important;
-    margin: auto !important;    
+.nav_prop {
+    width: 40% !important;
+    margin: auto !important;
 }
 
-.color li a{
-    color: black!important;
+.color li a {
+    color: black !important;
 }
 
 
@@ -51,15 +51,29 @@ body {
     font-size: $size_xs_text_category;
     font-family: "Josh";
     text-align: center;
-    color: $main_reference_category;  
+    color: $main_reference_category;
     font-weight: bold;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
+    position: relative;
     /*padding-top: 1em;*/
     /*padding-bottom: 0.5em;*/
+}
+
+.reference::after {
+    /*acá hago la línea debajo del texto*/
+    content: "";
+    border-radius: 12px;
+    width: 5em;
+    height: 5px;
+    background: #C98A3B;
+    position: absolute;
+    /*left: 35.5%;*/
+    bottom: 26%;
+    margin: auto;
 }
 
 
@@ -106,7 +120,7 @@ body {
         justify-content: center;
         align-items: center;
         margin: 0;
-    }    
+    }
 }
 
 @media (min-width:1024px) {

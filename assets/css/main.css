@@ -35,6 +35,12 @@
 /*601-799PX*/
 /*800-1023PX*/
 /*1024PX->*/
+/*CONFIG TEXTO PRECIO TARJETA PRODUCTOS*/
+/*DEFAULT*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
 /*CONFIG ANCHO CONTENEDOR IMAGEN TARJETA PRODUCTOS*/
 /*-------------- CONFIGURACION DEl FOOTER  -----------*/
 /*POLÍTICA DE PRIVACIDAD Y TERMINOS Y CONDICIONES*/
@@ -104,9 +110,17 @@ div.description {
   border: 1px solid rgba(209, 213, 219, 0.3); }
 
 /*-------------------------        EFECTO DEL BOTON "AGREGAR AL CARRO"         -------------------------*/
+.amount_items:hover:not(:disabled) {
+  background: #5ee45e;
+  color: whitesmoke; }
+
+.amount_items:disabled {
+  cursor: auto;
+  color: #83ff83; }
+
 .add_cart:hover:not(:disabled) {
-  background: #00b800;
-  color: white; }
+  background: #645993;
+  color: whitesmoke; }
 
 .add_cart:disabled {
   cursor: auto;
@@ -310,15 +324,28 @@ body {
   font-size: 3.3em;
   font-family: "Josh";
   text-align: center;
-  color: #914ac7;
+  color: #645993;
   font-weight: bold;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
+  position: relative;
   /*padding-top: 1em;*/
   /*padding-bottom: 0.5em;*/ }
+
+.reference::after {
+  /*acá hago la línea debajo del texto*/
+  content: "";
+  border-radius: 12px;
+  width: 5em;
+  height: 5px;
+  background: #C98A3B;
+  position: absolute;
+  /*left: 35.5%;*/
+  bottom: 26%;
+  margin: auto; }
 
 /* --------------------------------           MEDIA QUERIES            ----------------------------------*/
 @media (min-width: 400px) and (max-width: 600px) {
@@ -387,19 +414,23 @@ div.description {
   width: 100%;
   text-align: justify;
   padding: 5%; }
-  div.description .description,
-  div.description h1 {
+  div.description p.title {
     color: white;
     font-size: 2.3em;
     text-align: center;
     font-weight: bold;
     margin: 0; }
-  div.description .description,
-  div.description p {
+  div.description p.descript {
     color: white;
     font-size: 1.4em;
     text-align: justify;
-    margin-top: 8%; }
+    margin: 1.5em 0; }
+  div.description p.price {
+    color: #414141;
+    font-size: 1.65em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto; }
   div.description .buttons_container {
     display: flex;
     flex-wrap: wrap;
@@ -422,20 +453,26 @@ div.image_product {
 @media (min-width: 400px) and (max-width: 600px) {
   .cards_products_container {
     width: 80%; }
-  .cards_products_container div.description h1 {
-    font-size: 2.8em; }
-  .cards_products_container div.description p {
-    font-size: 1.7em; } }
+    .cards_products_container div.description p.title {
+      font-size: 2.8em; }
+    .cards_products_container div.description p.descript {
+      font-size: 1.7em;
+      margin: 1.7em 0; }
+    .cards_products_container div.description p.price {
+      font-size: 1.85em; } }
 
 /*-----------------------------------------------------------------------*/
 @media (min-width: 601px) and (max-width: 799px) {
   .cards_products_container {
     width: 80%;
     /*margin: 0 7.5%;*/ }
-  .cards_products_container div.description h1 {
-    font-size: 3.3em; }
-  .cards_products_container div.description p {
-    font-size: 1.8em; } }
+    .cards_products_container div.description p.title {
+      font-size: 3.3em; }
+    .cards_products_container div.description p.descript {
+      font-size: 1.8em;
+      margin: 2em 0; }
+    .cards_products_container div.description p.price {
+      font-size: 2.3em; } }
 
 /*-------------------------------------------------------------------------*/
 @media (min-width: 800px) and (max-width: 1023px) {
@@ -468,20 +505,20 @@ div.image_product {
       justify-content: space-around;
       /*margin-left: 5%*/
       row-gap: 2%; }
-      .cards_products_container div.description .description,
-      .cards_products_container div.description h1 {
+      .cards_products_container div.description p.title {
         color: white;
         font-size: 3.7em;
         text-align: center;
         font-weight: bold;
         margin: 0 auto;
         width: max-content; }
-      .cards_products_container div.description .description,
-      .cards_products_container div.description p {
+      .cards_products_container div.description p.descript {
         color: white;
         font-size: 1.9em;
         text-align: justify;
-        margin: 0; }
+        margin: 1.4em 0; }
+      .cards_products_container div.description p.price {
+        font-size: 2.35em; }
       .cards_products_container div.description .buttons_container {
         display: flex;
         flex-wrap: wrap;
@@ -509,7 +546,7 @@ div.image_product {
     display: grid;
     grid-template-areas: "description image_product";
     width: 90%;
-    grid-template-columns: repeat 2, 1fr;
+    /*grid-template-columns: repeat (2, 1fr);*/
     grid-auto-rows: 1fr;
     justify-content: space-evenly;
     gap: 10% 0;
@@ -529,20 +566,20 @@ div.image_product {
       justify-content: space-evenly;
       /*margin-left: 5%*/
       row-gap: 2%; }
-      .cards_products_container div.description .description,
-      .cards_products_container div.description h1 {
+      .cards_products_container div.description p.title {
         color: white;
         font-size: 4.1em;
         text-align: center;
         font-weight: bold;
         margin: 0 auto;
         width: max-content; }
-      .cards_products_container div.description .description,
-      .cards_products_container div.description p {
+      .cards_products_container div.description p.descript {
         color: white;
         font-size: 2.1em;
         text-align: justify;
-        margin: 0; }
+        margin: 1em 0; }
+      .cards_products_container div.description p.price {
+        font-size: 2.55em; }
       .cards_products_container div.description .buttons_container {
         display: flex;
         flex-wrap: wrap;
@@ -553,7 +590,8 @@ div.image_product {
         .cards_products_container div.description .buttons_container ul {
           display: inline-block;
           margin: 5% 0;
-          padding: 0; }
+          padding: 0;
+          gap: 20px; }
     .cards_products_container div.image_product {
       grid-area: image_product;
       display: flex;
@@ -591,7 +629,7 @@ div.image_product {
 @media (min-width: 1024px) {
   .social_bar {
     position: fixed;
-    left: 96%;
+    left: 96.5%;
     top: 58%; } }
 
 .pie {
@@ -675,7 +713,8 @@ div.image_product {
 .amount_items {
   font-size: 1rem;
   text-align: center;
-  border-radius: 0.4em; }
+  border-radius: 0.4em;
+  border: none; }
 
 /*------ BOTON DE AGREGAR AL CARRO ---------*/
 .add_cart {
