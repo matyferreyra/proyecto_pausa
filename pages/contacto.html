@@ -5,86 +5,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css"> <!-- Linkeado externo a pagina de estilos CSS-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css"> <!-- Linkeado externo a pagina de estilos CSS-->
     <title>PAUSA - CONTACTO</title> <!-- Esto sirve para nombra la pestaña del navegador-->
     <link rel="icon" href="../assets/img/pausa_favicon_small.png">
 </head>
 
 <body>
     <!-----------------------------------------         ENCABEZADO           ---------------------------------------->
-    <header>
-        <div class="brand">
-            <a href="./../index.html"><img src="./../assets/img/Logo_tiendita_pausa_sin_fondo.png" alt="Logo Pausa"></a>
+    <header class="header_style_default">
+        <div class="logo_container">
+            <a href="./../index.html"><img src="../assets/img/Logo Tiendita Pausa 400px SVG.svg" alt="Logo Pausa"></a>
         </div>
-        <div class="leyendaCentral">
-            <h1>
-                <p>Pausa</p>
-            </h1>
-            <h4>
-                <p> Tiendita de Cosas</p>
-            </h4>
+
+        <div class="brand_container">
+            <p id="pausa">
+                Pausa
+            </p>
+            <p id="tiendita">
+                Tiendita de Cosas
+            </p>
         </div>
+
         <div class="margenDerecho">
             <ul>
-                <!-- Esta lista va por fuera de la otra lista anterior porque con CSS tendrá un tratamiento distinto-->
-                <li><a href="./../pages/cuenta.html"><img src="./../assets/img/usuario_small.svg" alt="cuenta"></a></li>
-                <li><a href="./../pages/carrito.html"><img src="./../assets/img/carrito_small.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/icon_user_48px_f4c3b4.png" alt="cuenta"
+                            id="imgCuenta img-fluid"></a></li>
+                <li><a href="#"><img src="../assets/img/icon_cart_32px_f4c3b4.png" alt="usuario"
+                            id="sizecart img-fluid"></a></li>
             </ul>
         </div>
-        </div>
+
     </header>
 
     <main>
-        <div>
-            <nav class="navegacion">
-                <!---------------       MENU DE NAVEGACIÓN          -------------->
-                <!-- EL MENU NAV LO HICE DENTRO DEL BODY PARA DARLE ESE EFECTO DE SUPERPOSICIÓN DEL MENU "NAV" SOBRE LA IMAGEN QUE SE USA COMO FONDO DEL BODY-->
-                <ul class="menu">
-                    <li><a href="./../index.html">Inicio</a></li>
-                    <li><a href="./../pages/productos.html">Productos</a>
-                        <ul class="submenu">
-                            <li><a href="./../pages/cosmetica_natural.html">Cosmética Natural</a></li>
-                            <!--REELINKEAR A NUEVO NOMBRE-->
-                            <li><a href="./../pages/ceramica.html">Cerámica</a></li>
-                            <li><a href="./../pages/mates.html">Mates</a></li>
-                            <li><a href="./../pages/hilos.html">Hilos</a></li>
-                        </ul>
-                    <li><a href="./../pages/nosotros.html">Nosotros</a></li>
-                    </li>
-                </ul>
-            </nav>
-        </div>
 
-        <!----------------------------         EN CONSTRUCCIÓN           ---------------------------->
-        <section>
-            <h1>CONTACTO</h1>
-            <P>Deje su mensaje. A la brevedad nos estaremos comunicando.</P>
-        </section>
-        <div>
-            <form action="" method="post"></form>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light h4 color nav_prop style_main_menu">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown activo" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu style_submenu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./mates.html">MATES</a></li>
+                                <li><a class="dropdown-item" href="./hilos.html">HILOS</a></li>
+                                <li><a class="dropdown-item" href="./ceramica.html">CERAMICA</a></li>
+                                <li><a class="dropdown-item" href="./cosmetica_natural.html">COSMETICA NATURAL</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <!----------------------------         MAIN           ---------------------------->
+        <br>
+        <br>    
+        <br>
+        <br>        
+        <div class="style_card_container">
+            <section>
+                <p class="text_title_contact">CONTACTO</p>
+                <P class="text_contact">Deje su mensaje. A la brevedad nos estaremos comunicando.</P>
+            </section>
+            <br>
+            <br>
+            <br>            
+            <div>
+                <form action="" method="post"></form>
+            </div>
+            <div>
+                <label for="Nombre" class="style_label">NOMBRE Y APELLIDO:</label>
+                <br>
+                <input type="text" class="style_input" required>
+            </div>
+            <br>
+            <div class="style_center">
+                <label for="email" class="style_label">CORREO ELECTRÓNICO:</label>
+                <br>
+                <input type="mail" class="style_input" required>
+            </div>
+            <br>
+            <div>
+                <textarea name="mensaje" class="style_textarea" cols="43" rows="12" placeholder="mensaje" required></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="submit"  class="button_submit" value="Enviar mensaje">
+            </div>
         </div>
-            <div>
-                <label for="Nombre">Nombre y Apellido</label>
-                <input type="text" required>
-            </div>
-            <br>
-            <div>
-                <label for="email">Correo Electrónico</label>
-                <input type="mail" required>
-            </div>
-            <br>
-            <div>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
-            </div>
-            <br>
-            <div>
-                <input type="submit" value="Enviar mensaje">
-            </div>
-        
+        <br>
+        <br>
+        <br>
+
         <!-----------------------------------------    SOCIAL BAR DENTRO DEL MAIN   ---------------------------------------->
-        <aside class="socialBar">
-            <a href="https://www.instagram.com/tienditapausa/?hl=es-la" class="iconInsta" target="_blank"><img
-                    src="./../assets/img/instagram_small.png" alt="instagram"></a>
+        <aside class="social_bar">
+            <a href="https://www.instagram.com/tienditapausa/?hl=es-la" class="icon_instagram img-fluid"
+                target="_blank"><img src="./../assets/img/instagram_small.png" alt="instagram"></a>
         </aside>
 
     </main>
@@ -100,7 +133,7 @@
         </div>
         <a href="#">Contacto</a>
     </footer>
-
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid main</title>
+    <title>HOME PAUSA</title>
     <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -12,153 +12,141 @@
 </head>
 
 <body class="container-fluid">
-    <!-------HEADER-------->
-    <!-- <div class="row header">
-
-        <div class="col-3 logoContainer">
-            <a href="#";><img src="./assets/img/Logo Tiendita Pausa 400px SVG.svg" alt="Logo Pausa"
-                    class="img-fluid" id="sizeLogo"></a>
-        </div>
-
-        <div class="col-6" 
-        <p id="pausa">
-            Pausa
-            </p>
-            <p id="tiendita">
-                Tiendita de Cosas
-            </p>
-        </div>
-
-        <div class="col-3 stileRight">
-            <ul>
-                <li><a href="./pages/cuenta.html"><img src="./assets/img/icon_user_48px_f4c3b4.png" alt="cuenta"></a>
-                </li>
-                <li><a href="./pages/carrito.html"><img src="./assets/img/icon_cart_32px_f4c3b4.png" alt="carrito"></a>
-                </li>
-            </ul>
-        </div>
-
-    </div> -->
-
     <header>
-        <nav class="navbar  navbar-expand-lg  fixed-top">
-            <div class="container-fluid"
-                <a class="navbar-brand " href="#">TIENDA PAUSA</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <i class="ri-menu-line menu"></i> </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">TIENDA PAUSA</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#about">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#product">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#contact">Contacto</a>
-                            </li>
-                        </ul
-                    </div>
-                </div>
+        <header class="header_style_default">
+            <div class="logo_container">
+                <a href="./../index.html"><img src="../assets/img/Logo Tiendita Pausa 400px SVG.svg" alt="Logo Pausa"></a>
             </div>
-        </nav>
+    
+            <div class="brand_container">
+                <p id="pausa">
+                    Pausa
+                </p>
+                <p id="tiendita">
+                    Tiendita de Cosas
+                </p>
+            </div>
+    
+            <div class="margenDerecho">
+                <ul>
+                    <li><a href="#"><img src="../assets/img/icon_user_48px_f4c3b4.png" alt="cuenta"
+                                id="imgCuenta img-fluid"></a></li>
+                    <li><a href="#"><img src="../assets/img/icon_cart_32px_f4c3b4.png" alt="usuario"
+                                id="sizecart img-fluid"></a></li>
+                </ul>
+            </div>
     </header>
 
     <!--------------------------------------------------------------------------------------------------->
     <main id="main">
-        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light h4 color nav_prop style_main_menu">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown activo" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu style_submenu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./pages/mates.html">MATES</a></li>
+                                <li><a class="dropdown-item" href="./pages/hilos.html">HILOS</a></li>
+                                <li><a class="dropdown-item" href="./pages/ceramica.html">CERAMICA</a></li>
+                                <li><a class="dropdown-item" href="./pages/cosmetica.html">COSMETICA NATURAL</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
+                        </li>                            
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
         </div>
         <!---------------------------------------------------------------------------------------------->
-        <div class="row">
-            <p>Categorias de Productos</p>
+        <div>
+            <p class="title_category">CATEGORIAS</p>
         </div>
         <!-------------------------------------------------------------------------------------------->
-        <div class="row d-flex flex-row justify-content-evenly align-items-center cardsproductos">
-            <!--<div class="cardsproductos">-->
-            <!-----     CONTENEDOR GENERAL DE LOS OTROS     ---->
-            <div class="productCat p-0">
-                <a href="pages/cosmetica_natural.html" class="textCard">
-                    <div class="productCat__img">
-                        <img class="resize img-fluid" src="assets/img/foto_cosmetica_prueba.png"
-                            alt="Cosmética Natural">
-                    </div>
-                    <div class="productCat__text">
-                        <p class="textCard">COSMETICA NATURAL</p>
-                    </div>
-                </a>
-            </div>
+        <div>
+            <section class="productContainer">
+                <!-----     CONTENEDOR GENERAL DE LOS OTROS     ---->
+                <div class="productCat">
+                    <a href="pages/cosmetica_natural.html" class="textCard">
+                        <div class="productCat__img">
+                            <img class="resize"
+                            src="assets/img/foto_cosmetica_index.png" alt="Cosmética Natural">
+                        </div>
+                        <div class="productCat__text">
+                            <p class="textCard">COSMETICA NATURAL</p>
+                        </div>
+                    </a>
+                </div>
 
-            <div class="productCat p-0">
-                <a href="pages/ceramica.html" class="textCard">
-                    <div class="productCat__img">
-                        <img class="resize img-fluid" src="assets/img/foto_ceramica_prueba.png" alt="Cerámica">
-                    </div>
-                    <div class="productCat__text">
-                        <p class="textCard">CERAMICA</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="productCat p-0">
-                <a href="pages/mates.html" class="textCard">
-                    <div class="productCat__img">
-                        <img class="resize img-fluid" src="assets/img/foto_mates_prueba.png" alt="Mates">
-                    </div>
-                    <div class="productCat__text">
-                        <p class="textCard">MATES PAUSA</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="productCat p-0">
-                <a href="pages/hilos.html" class="textCard">
-                    <div class="productCat__img">
-                        <img class="resize img-fluid" src="assets/img/foto_hilos_prueba.png" alt="Hilos">
-                    </div>
-                    <div class="productCat__text">
-                        <p class="textCard">HILOS<p>
-                    </div>
-                </a>
-            </div>
-
-
-            <aside class="socialBar">
-                <a href="https://www.instagram.com/tienditapausa/?hl=es-la" class="iconInsta" target="_blank"><img
-                        src="./assets/img/instagram_small.png" alt="instagram"></a>
-            </aside>
-
-            <!--</div>-->
+                <div class="productCat">
+                    <a href="pages/ceramica.html" class="textCard">
+                        <div class="productCat__img">
+                            <img class="resize"
+                            src="assets/img/foto_ceramica_index.png" alt="Cerámica">
+                        </div>
+                        <div class="productCat__text">
+                            <p class="textCard">CERAMICA</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="productCat">
+                    <a href="pages/mates.html" class="textCard">
+                        <div class="productCat__img">
+                            <img class="resize" src="assets/img/foto_mates_index.png"
+                            alt="Mates">
+                        </div>
+                        <div class="productCat__text">
+                            <p class="textCard">MATES PAUSA</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="productCat">
+                    <a href="pages/hilos.html" class="textCard">
+                        <div class="productCat__img">
+                            <img class="resize" src="assets/img/foto_hilos_index.png"
+                            alt="Hilos">
+                        </div>
+                        <div class="productCat__text">
+                            <p class="textCard">HILOS<p>
+                        </div>
+                    </a>
+                </div>
+            </section>
         </div>
+        <aside class="social_bar">
+            <a href="https://www.instagram.com/tienditapausa/?hl=es-la" class="icon_instagram img-fluid"
+                target="_blank"><img src="./../assets/img/instagram_small.png" alt="instagram"></a>
+        </aside>
 
-        <div class="row d-flex flex-row justify-content-evenly align-items-center">
-
-            <div class="containerul">
+    </main>
+    <!-----------------------------------------           PIE DE PÁGINA           ---------------------------------------->
+    <footer class="pie">
+        <div>
+            <div>
                 <ul>
-                    <li><a href="./pages/privacidad.html">Política de Privacidad</a></li>
-                    <li><a href="./pages/tyc.html">Términos y Condiciones</a></li>
-                </ul>
-            </div>
-
-            <div class="contact">
-                <ul>
-                    <img src="./assets/img/icon_letter_24px_f4c3b4.png" alt="Contacto">
-                    <a href="./pages/contacto.html">Contacto</a>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
                 </ul>
             </div>
         </div>
+        <a href="./../pages/contacto.html">Contacto</a>
+    </footer>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 
-        <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,14 @@
+/*-------------------------------      PÁGINA "CONTACTO" EN MOBILE FIRST      -------------------------*/
+
+.contact{
+    margin: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: space-around;
+}
+
+.mensage{
+    width: 25em;
+}

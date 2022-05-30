@@ -1,2 +1,68 @@
+/*---------------------*/
+.title_category{
+    font-size: $size_xs_text_category;
+    font-family: "Josh";
+    text-align: center;
+    color: $main_reference_category;
+    font-weight: bold;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+}
 
-  
+/*---------------        CONFIGURACIÓN DE LOS ESTILOS DE LOS CONTENEDORES PADRE-HIJOS DEL MAIN      ------------------.*/
+.productContainer {
+    /*ESTE ES LA CONFIG DEL CONTENEDOR PRINCIPAL DE LOS ITEMS*/
+    width: 100%;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 0 5% 0;
+    padding: 1.5%;
+}
+
+.productCat {
+    /*-------  ACÁ CONFIGURO CÓMO SERÁ EL CONTENDOR DE CADA TARJETA/CATEGORIA  --------*/
+    width: 200px;
+    border-color: #f3b365;
+    border-style: ridge;
+    border-width: 2px;
+    margin: 1.5%;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    background: white;   
+}
+
+.resize {
+    /*-----    redimensiono todas las imagenes botoneras   -----*/
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.productCat__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+.textCard {
+    font-family: "spirqual";
+    color: black;  
+    font-size: 1.5em;  
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.productContainer .productCat img {
+    /*esto lo hago para que el campo de la descripción del texto se ajuste automaticamente al mismo tamaño que la imagen padre*/
+    /* width: 20%; */
+}
+
+
+
+

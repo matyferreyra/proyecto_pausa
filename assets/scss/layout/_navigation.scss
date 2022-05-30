@@ -1,0 +1,214 @@
+/*-----------------------------       CONFIGURACIÓN NAVBAR       -----------------------------*/
+
+
+//ACLARACIÓN PREVIA PARA EL PROFESOR: Acá en el nabvar tuve que usar mucho important para poder pisar las reglas de bootstrap, ya que el navbar lo hice con dicha libreria y luego le fui haciendo algunas modificicaciones a mi gusto
+
+
+
+.navbar-toggler-icon {
+    width: 2em !important; //configuracion tamaño menu hamburguesa
+    height: 2em !important;
+}
+
+.style_main_menu {
+    font-size: 1.3em;
+    background-color: #ecd3bf !important;
+    opacity: 95%;
+    border-radius: 0 0 20px 0;
+    width: 28%;    
+    font-family: "Josh";    
+
+    ul {
+        margin: auto;
+        font-weight: bold;
+
+        li {
+            padding: 0 !important;
+            margin: 1em 0.35em 0 0.35em;
+
+            a {
+                color: black !important;
+                font-size: 1.2em;
+                margin: auto;
+                padding-left: 0.25em !important;
+            }
+
+            a:hover {
+                background-color: #C98A3B !important;
+                border-radius: 0.5em;
+                font-weight: bold;
+                transition: 0.2s;
+                color: white !important;
+            }
+        }
+    }
+}
+
+.style_submenu {
+    border: 0;
+    background-color: #ecd3bf;    
+    // aca configuramos la distancia entre el submenu productos y el resto del menu nav 
+    padding: 0 0.2em 0.3em 1.2em !important;
+    border-radius: 0px 20px 20px 0px;
+    position: relative !important;
+    z-index: 2;
+    forward {position: absolute; z-index: 5px;}
+
+
+    li {
+        padding-left: 5em !important;
+        margin: 1.6em 0 !important; //distancia entre elementos submenu (una forma de "GAP")
+
+        a {
+            font-family: "Josh";
+            font-size: 1.6em !important;
+            padding: 0 0.8em !important;
+        }
+
+        a:hover {
+            background-color: #C98A3B !important;
+            border-radius: 0.5em !important;
+            font-weight: bold !important;
+            transition: 0.2s !important;
+            font-size: 1.75em !important;
+            /*acá tendria que hacer una funcion que lo haga automaticamente de acuerdo al tamaño de la letra que tenga*/
+        }
+    }
+}
+
+/* --------------------------------           MEDIA QUERIES NAVBAR        ----------------------------------*/
+
+
+@media (min-width:800px) and (max-width:1023px) {
+    .style_main_menu {
+        border-radius: 2em;
+        border-radius: 0px 0px 45px 45px !important;
+        background-color: #ecd3bf !important;
+        font-family: "Josh";
+        width: 45% !important;
+        margin: auto !important;
+        position: unset;
+        z-index: unset;
+        cursor: pointer !important;
+
+        ul {
+            margin: auto !important;
+            font-weight: bold !important;
+
+
+            li {
+                padding: 0 !important;
+                margin: 0 0.75em;
+
+                a {
+                    color: black !important;
+                    font-size: 1.7em;
+                    margin: auto;
+                }
+
+                a:hover {
+                    background-color: #C98A3B !important;
+                    border-radius: 0.5em;
+                    font-weight: bold;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+
+    .style_submenu {
+        border: 0;
+        background-color: #ecd3bf;
+        opacity: 100%;
+        margin-top: 0.5em !important;
+        /*--- aca configuramos la distancia entre el submenu productos y el resto del menu nav  ---*/
+        padding: 0 0.2em 1.2em 0.2em !important;
+        border-radius: 0px 0px 30px 30px;
+        position: absolute !important;
+        z-index: 1 !important;
+        cursor: pointer !important;
+
+        li {
+            margin: 1.5em 0 !important; //distancia entre las opcions del submenu
+
+            a {
+                font-family: "Josh";
+                font-size: 1.8em !important;
+                padding: 0 0.8em !important;
+            }
+
+            a:hover {
+                //background-color: #C98A3B !important;
+                //border-radius: 0.5em !important;
+                //font-weight: bold !important;
+                transition: 0.2s !important;
+                font-size: 2.1em !important;
+            }
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    .style_main_menu {
+        border-radius: 2em;
+        border-radius: 0px 0px 45px 45px !important;
+        background-color: #ecd3bf !important;
+        font-family: "Josh";
+        width: 40% !important;
+        margin: auto !important;
+        position: relative;
+        z-index: 1;
+        cursor: pointer !important;
+
+        ul {
+            margin: auto !important;
+            font-weight: bold !important;
+
+
+            li {
+                padding: 0 !important;
+                margin: 0 0.75em;
+
+                a {
+                    color: black !important;
+                    font-size: 1.9em;
+                    margin: auto;
+                }
+
+                a:hover {
+                    background-color: #C98A3B !important;
+                    border-radius: 0.5em;
+                    font-weight: bold;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+
+    .style_submenu {
+        border: 0;
+        background-color: #ecd3bf;        
+        margin-top: 0.5em !important;
+        /*--- aca configuramos la distancia entre el submenu productos y el resto del menu nav  ---*/
+        padding: 0 0.2em 1.2em 0.2em !important;
+        border-radius: 0px 0px 30px 30px;
+        position: absolute !important;
+        z-index: 2 !important;
+        cursor: pointer !important;
+
+        li {
+            margin: 1.5em 0 !important; //distancia entre las opcions del submenu
+
+            a {
+                font-family: "Josh";
+                font-size: 2em !important;
+                padding: 0 0.8em !important;
+            }
+
+            a:hover {
+                transition: 0.2s !important;
+                font-size: 2.1em !important;
+            }
+        }
+    }
+}

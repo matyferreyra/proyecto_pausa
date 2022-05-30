@@ -1,0 +1,122 @@
+//CONFIGURACIÓN DEL TAMAÑO DEL TITULO DE CADA CATEGORIA DE LA PAGINA "PRODUCTOS". Aclaración: son iguales en sus propiedades porque el cambio en sí se ve reflejado al momento de aplicar sus respectivos efectos HOVER. Para ello ver la hoja de estilos "effects".
+
+
+.title_mates {
+    font-size: $size_xs_text_category;
+    font-family: "Josh";
+    text-align: center;
+    color: $main_reference_category;
+    font-weight: bold;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;    
+}
+
+.title_hilos {
+    font-size: $size_xs_text_category;
+    font-family: "Josh";
+    text-align: center;
+    color: $main_reference_category;
+    font-weight: bold;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;    
+}
+
+.title_ceramica {
+    font-size: $size_xs_text_category;
+    font-family: "Josh";
+    text-align: center;
+    color: $main_reference_category;
+    font-weight: bold;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;    
+}
+
+.title_cosme {
+    font-size: $size_xs_text_category;
+    font-family: "Josh";
+    text-align: center;
+    color: $main_reference_category;
+    font-weight: bold;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;    
+}
+
+/* --------------------------------           MEDIA QUERIES            ----------------------------------*/
+
+@media (min-width:400px) and (max-width:600px) {
+    .title_mates {
+        font-size: $size_s_text_category;
+    }
+    .title_hilos {
+        font-size: $size_s_text_category;
+    }
+    .title_ceramica {
+        font-size: $size_s_text_category;
+    }
+    .title_cosme {
+        font-size: $size_s_text_category;
+    }
+}
+
+@media (min-width:601px) and (max-width:799px) {
+    .title_mates {
+        font-size: $size_m_text_category;
+    }
+    .title_hilos {
+        font-size: $size_m_text_category;
+    }
+    .title_ceramica {
+        font-size: $size_m_text_category;
+    }
+    .title_cosme {
+        font-size: $size_m_text_category;
+    }
+}
+
+@media (min-width:800px) and (max-width:1023px) {
+    .title_mates {
+        font-size: $size_l_text_category;
+    }
+    .title_hilos {
+        font-size: $size_l_text_category;
+    }
+    .title_ceramica {
+        font-size: $size_l_text_category;
+    }
+    .title_cosme {
+        font-size: $size_l_text_category;
+    }
+}
+
+@media (min-width:1024px) {
+    .title_mates {
+        font-size: $size_xl_text_category;
+    }
+    .title_hilos {
+        font-size: $size_xl_text_category;
+    }
+    .title_ceramica {
+        font-size: $size_xl_text_category;
+    }
+    .title_cosme {
+        font-size: $size_xl_text_category;
+    }
+}
+
+

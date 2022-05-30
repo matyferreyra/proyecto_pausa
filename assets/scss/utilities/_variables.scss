@@ -1,3 +1,16 @@
+
+
+
+//ESTA ES LA HOJA DE ESTILOS QUE CONTIENE LAS VARIABLES DE TODAS LAS PAGINAS DEL SITIO WEB, INCLUSO CON SUS MEDIA QUERIES.
+
+
+
+
+/*---------------------------------------------        PÁGINA INDEX         ---------------------------*/
+
+
+
+/*---------------------------------------------        PÁGINAS DE PRODUCTOS         ---------------------------*/
 /*-------------- HEADER  -----------*/
 $header_background_color: #414060;
 
@@ -35,17 +48,17 @@ $size_text_xl_tiendita: 2.1em;
 /*-------------- NAVBAR  -----------*/
 $navbar_background_color: #C98A3B;
 
-/*-----------------------------      CONFIGURACIÓN TEXTO CATEGORIA MATES/CERAMICA/HILOS/COMESTICA     -----------------------------*/
+/*-----------------------------      CONFIGURACIÓN TEXTO CATEGORIA MATES/CERAMICA/HILOS/COMESTICA/NOSOTROS     -----------------------------*/
 $main_reference_category: #645993;
 $size_xs_text_category: 3.3em;
 /*DEFAULT*/
 $size_s_text_category: 3.75em;  
 /*400-600PX*/
-$size_m_text_category: 4.2em;
+$size_m_text_category: 4.4em;
 /*601-799PX*/
-$size_l_text_category: 4.7em;
+$size_l_text_category: 4.6em;
 /*800-1023PX*/
-$size_xl_text_category: 5em;
+$size_xl_text_category: 4.7em;
 /*1024PX->*/
 
 
@@ -89,7 +102,7 @@ $size_m_descript_product: 1.8em;
 /*601-799PX*/
 $size_l_descript_product: 1.9em;
 /*800-1023PX*/
-$size_xl_descript_product: 2.1em;
+$size_xl_descript_product: 2.3em;
 /*1024PX->*/
 
 /*CONFIG TEXTO PRECIO TARJETA PRODUCTOS*/
@@ -114,27 +127,159 @@ $size_img_product:100%;
 
 
 
-/*-------------- CONFIGURACION DEl FOOTER  -----------*/
+/*--------------           CONFIGURACION DEl FOOTER             -----------*/
 $footer_background_color: #2C2918;
 $footer_size_left: 1.6em;
+
 /*POLÍTICA DE PRIVACIDAD Y TERMINOS Y CONDICIONES*/
 $footer_size_right: 1.8em;
 /*CONTACTO*/
 
 $footer_size_s_left: 1.75em;
-/*400-600PX*/
-$footer_size_m_left: 1.85em;
-/*601-799PX*/
-$footer_size_l_left: 1.85em;
-/*800-1023PX*/
-$footer_size_xl_left: 2.05em;
-/*1024PX->*/
-
 $footer_size_s_right: 2.10em;
 /*400-600PX*/
+$footer_size_m_left: 1.85em;
 $footer_size_m_right: 2.20em;
 /*601-799PX*/
+$footer_size_l_left: 1.85em;
 $footer_size_l_right: 2.25em;
 /*800-1023PX*/
+$footer_size_xl_left: 2.05em;
 $footer_size_xl_right: 2.50em;
+/*1024PX->*/
+
+
+/*---------------------------------------------     SOCIAL NETWORKS       ---------------------------*/
+
+$position_left_xs: 88.5%;
+$position_top_xs: 58%;  
+/*DEFAULT*/
+$position_left_s: 91.5%;
+$position_top_s: 58%;
+/*400-600PX*/
+$position_left_m: 94%;
+$position_top_m: 58%;
+/*601-799PX*/
+$position_left_l: 95.5%;
+$position_top_l: 58%;
+/*800-1023PX*/
+$position_left_xl: 96.5%;
+$position_top_xl: 58%;
+/*1024PX->*/
+
+
+/*---------------------------------------------        PÁGINAS "NOSOTROS"         ---------------------------*/
+
+$size_xs_title_about: 3.8em;
+$size_xs_text: 1.8em;
+/*DEFAULT*/
+$size_s_title_about: 3.9em;
+$size_s_text: 1.9em;
+/*400-600PX*/
+$size_m_title_about: 4.1em;
+$size_m_text: 2em;
+/*601-799PX*/
+$size_l_title_about: 4.3em;
+$size_l_text: 2.15em;
+/*800-1023PX*/
+$size_xl_title_about: 4.5em;
+$size_xl_text: 2.3em;
+/*1024PX->*/
+
+
+/*---------------------------------------------        PÁGINA DE CONTACTO         ---------------------------*/
+
+//CONFIGURACIÓN DEL ANCHO DE LA CLASE "style_card_container"
+$width_xs: 95%;
+/*DEFAULT*/
+$width_s: 90%;
+/*400-600PX*/
+$width_m: 70%;
+/*601-799PX*/
+$width_l: 58%;
+/*800-1023PX*/
+$width_xl: 50%;
+/*1024PX->*/
+
+//CONFIGURACIÓN DEL TAMAÑO Y DEL MARGIN DE LA CLASE "text_title_contact"
+$size_xs_title_contact: 2.4em;
+$margin_xs_title_contact: 0 0 0 1em;
+/*DEFAULT*/
+$size_s_title_contact: 2.8em;
+$margin_s_title_contact: 0 0 0 2em;
+/*400-600PX*/
+$size_m_title_contact: 3em;
+$margin_m_title_contact: 0 0 0 1.5em;
+/*601-799PX*/
+$size_l_title_contact: 3em;
+$margin_l_title_contact: 0 0 0 2em;
+/*800-1023PX*/
+$size_xl_title_contact: 3.3em;
+$margin_xl_title_contact: 0 0 0 2em;
+/*1024PX->*/
+
+
+//CONFIGURACIÓN DEL TAMAÑO Y DEL MARGIN DE LA CLASE "text_contact"
+$size_xs_text_contact: 1.7em;
+$margin_xs_text_contact: 1.5em;
+/*DEFAULT*/
+$size_s_text_contact: 1.9em;
+$margin_s_text_contact: 1em 2.5em;
+/*400-600PX*/
+$size_m_text_contact: 2.1em;
+$margin_m_text_contact: 1em 2.2em;
+/*601-799PX*/
+$size_l_text_contact:  2.1em;
+$margin_l_text_contact: 1em 2.6em;
+/*800-1023PX*/
+$size_xl_text_contact: 2.1em;
+$margin_xl_text_contact: 1em 2em 0 2.1em;
+/*1024PX->*/
+
+
+//CONFIGURACIÓN DEL TAMAÑO DE LA CLASE "style_label"
+$size_xs_label: 1.6em;
+/*DEFAULT*/
+$size_s_label: 1.6em;
+/*400-600PX*/
+$size_m_label: 1.8em;
+/*601-799PX*/
+$size_l_label:  1.9em;
+/*800-1023PX*/
+$size_xl_label: 1.7em;
+/*1024PX->*/
+
+
+//CONFIGURACIÓN DEL TAMAÑO DE LA CLASE "style_input"
+$size_xs_input: 2em;
+$width_xs_input: 16em;
+/*DEFAULT*/
+$size_s_input: 2em;
+$width_s_input: 18em;
+/*400-600PX*/
+$size_m_input: 2em;
+$width_m_input: 18em;
+/*601-799PX*/
+$size_l_input:  2.2em;
+$width_l_input: 19em;
+/*800-1023PX*/
+$size_xl_input: 2em;
+$width_xl_input: 23em;
+/*1024PX->*/
+
+
+//CONFIGURACIÓN DEL TAMAÑO Y ANCHO DE LA CLASE "style_textarea"
+$size_xs_textarea: 1.6em;
+/*DEFAULT*/
+$size_s_textarea: 1.8em;
+$width_s_textarea: 20em;
+/*400-600PX*/
+$size_m_textarea: 1.85em;
+$width_m_textarea: 19.5em;
+/*601-799PX*/
+$size_l_textarea:  2.2em;
+$width_l_textarea: 19em;
+/*800-1023PX*/
+$size_xl_textarea: 2em;
+$width_xl_textarea: 23em;
 /*1024PX->*/

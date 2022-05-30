@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/main.css"> <!-- Linkeado externo a pagina de estilos CSS-->
     <title>PAUSA - MATES</title> <!-- Esto sirve para nombrar la pestaña del navegador-->
-    <link rel="icon" href="../assets/img/pausa_favicon_small.png">
+    <link rel="icon" href="../assets/img/pausa_favicon_small.png"> <!-- FAVICON-->
 </head>
 
 <body class="RESET body_style">
@@ -29,9 +29,9 @@
 
         <div class="margenDerecho">
             <ul>
-                <li><a href="./../pages/cuenta.html"><img src="../assets/img/icon_user_48px_f4c3b4.png" alt="cuenta"
+                <li><a href="#"><img src="../assets/img/icon_user_48px_f4c3b4.png" alt="cuenta"
                             id="imgCuenta img-fluid"></a></li>
-                <li><a href="./../pages/carrito.html"><img src="../assets/img/icon_cart_32px_f4c3b4.png" alt="usuario"
+                <li><a href="#"><img src="../assets/img/icon_cart_32px_f4c3b4.png" alt="usuario"
                             id="sizecart img-fluid"></a></li>
             </ul>
         </div>
@@ -39,42 +39,43 @@
     </header>
 
     <main id="main">
-        <nav class="navbar  navbar-expand-xxl navbar-dark navegador ">
-            <div class="container ">
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav d-flex flex-row justify-content-evenly h4 color nav_prop container_nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">INICIO</a>
-                        </li>
 
+        <!-- <ul class="navbar-nav d-flex flex-row justify-content-evenly h4 color nav_prop container_nav"> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light h4 color nav_prop style_main_menu">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" aria-current="page" href="#product">PRODUCTOS</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li>
-                                    <a class="dropdown-item" href="#">Hilos</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Mates</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Cerámica</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Cosmética Natural</a>
-                                </li>
-                            </ul>                            
+                            <a class="nav-link" href="#" id="navbarDropdown activo" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu style_submenu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./mates.html">MATES</a></li>
+                                <li><a class="dropdown-item" href="./hilos.html">HILOS</a></li>
+                                <li><a class="dropdown-item" href="./ceramica.html">CERAMICA</a></li>
+                                <li><a class="dropdown-item" href="./cosmetica.html">COSMETICA NATURAL</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#about">NOSOTROS</a>
+                            <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
                         </li>
-                        </li>
-
                     </ul>
+
                 </div>
             </div>
         </nav>
 
         <div>
-            <p class="reference">MATES</p>
+            <p class="title_mates">MATES</p>
         </div>
 
 
@@ -86,22 +87,67 @@
 
                 <div class="description">
 
-                    <p class="title"> Mate montañita </p>
-                    <p class="descript">Este mate es para los amantes de la naturalez y de los bosques, un mate que
-                        evoca la belleza del bosque, con sus formas y aromas.</p>
-                    <p class="price"> Precio: $ 750,00.- </p>
-                        <div class="buttons_container">                    
+                    <p class="title"> Mate Arcoiris </p>
+                    <p class="descript">Mate con pequeños arcoiris de diversos colores. Los colores pueden ser elegidos a opción del consumidor.</p>
+                    <p class="price"> Precio: $ 850,00.- </p>
+                    <div class="buttons_container">
                         <ul>
-                            <button class="amount_items">-</button>
-                            <input type="text" size="1" readonly="true" value="1" class="amount_items">
-                            <button class="amount_items">+</button>
+                            <button class="amount_items less">-</button>
+                            <input type="text" size="1" readonly="true" value="1" class="amount_items amount">
+                            <button class="amount_items more">+</button>
                         </ul>
                         <button class="add_cart">Agregar al carro</button>
                     </div>
                 </div>
 
                 <div class="image_product">
-                    <img src="../assets/img/mates/mate_equilibrio.png" alt="mate equilibrio"
+                    <img src="../assets/img/mates/mate_arcoiris.png" alt="mate arcoiris" class="img-fluid imageProduct">
+                </div>
+
+            </div>
+
+            <div class="cards_products_container">
+
+                <div class="description">
+
+                    <p class="title"> Mate Corazon </p>
+                    <p class="descript">Mate que lleva consigo la forma del amor. Este mate se puede realizar combinar con los colores que se desee.</p>
+                    <p class="price"> Precio: $ 850,00.- </p>
+                    <div class="buttons_container">
+                        <ul>
+                            <button class="amount_items less">-</button>
+                            <input type="text" size="1" readonly="true" value="1" class="amount_items amount">
+                            <button class="amount_items more">+</button>
+                        </ul>
+                        <button class="add_cart">Agregar al carro</button>
+                    </div>
+                </div>
+
+                <div class="image_product">
+                    <img src="../assets/img/mates/mate_corazon.png" alt="mate corazón" class="img-fluid imageProduct">
+                </div>
+
+            </div>
+
+            <div class="cards_products_container">
+
+                <div class="description">
+
+                    <p class="title"> Mate armonia </p>
+                    <p class="descript">Este mate evoca la armonia y equilibrio de la vida en la patagonia, siendo de colores calidos.</p>
+                    <p class="price"> Precio: $ 900,00.- </p>
+                    <div class="buttons_container">
+                        <ul>
+                            <button class="amount_items less">-</button>
+                            <input type="text" size="1" readonly="true" value="1" class="amount_items amount">
+                            <button class="amount_items more">+</button>
+                        </ul>
+                        <button class="add_cart">Agregar al carro</button>
+                    </div>
+                </div>
+
+                <div class="image_product">
+                    <img src="../assets/img/mates/mate_equilibrio.png" alt="mate armonia"
                         class="img-fluid imageProduct">
                 </div>
 
@@ -113,14 +159,13 @@
                 <div class="description">
 
                     <p class="title"> Mate margarita </p>
-                    <p class="descript">Este mate es para los amantes de la naturalez y de los bosques, un mate que
-                        evoca la belleza del bosque, con sus formas y aromas.</p>
+                    <p class="descript">Este mate transmite los colores, la energia y la luz de la primavera en la ciudad de Bariloche.</p>
                     <p class="price"> Precio: $ 750,00.- </p>
                     <div class="buttons_container">
                         <ul>
-                            <button class="amount_items">-</button>
-                            <input type="text" size="1" readonly="true" value="1" class="amount_items">
-                            <button class="amount_items">+</button>
+                            <button class="amount_items less">-</button>
+                            <input type="text" size="1" readonly="true" value="1" class="amount_items amount">
+                            <button class="amount_items more">+</button>
                         </ul>
                         <button class="add_cart">Agregar al carro</button>
                     </div>
@@ -138,15 +183,16 @@
 
                 <div class="description">
 
-                    <p class="title"> Mate Prueba </p>
-                    <p class="descript"> clEste mate es para los amantes de la naturalez y de los bosques, un mate que
+                    <p class="title"> Mate Montañita </p>
+                    <p class="descript"> clEste mate es para los amantes de la naturalez y de los bosques, un mate
+                        que
                         evoca la belleza del bosque, con sus formas y aromas.</p>
-                    <p class="price"> Precio: $ 750,00.- </p>    
+                    <p class="price"> Precio: $ 750,00.- </p>
                     <div class="buttons_container">
-                        <ul>
-                            <button class="amount_items">-</button>
-                            <input type="text" size="1" readonly="true" value="1" class="amount_items">
-                            <button class="amount_items">+</button>
+                        <ul class="distance_buttons">
+                            <button class="amount_items less">-</button>
+                            <input type="text" size="1" readonly="true" value="1" class="amount_items amount">
+                            <button class="amount_items more">+</button>
                         </ul>
                         <button class="add_cart">Agregar al carro</button>
                     </div>
@@ -178,15 +224,14 @@
         <div>
             <div>
                 <ul>
-                    <li><a href="./../pages/privacidad.html">Política de Privacidad</a></li>
-                    <li><a href="./../pages/tyc.html">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
                 </ul>
             </div>
         </div>
         <a href="./../pages/contacto.html">Contacto</a>
     </footer>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/JavaScript.js"></script>
 
 </body>
 

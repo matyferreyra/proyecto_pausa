@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*---------------------------------------------        PÁGINA INDEX         ---------------------------*/
+/*---------------------------------------------        PÁGINAS DE PRODUCTOS         ---------------------------*/
 /*-------------- HEADER  -----------*/
 /*TEXTO "PAUSA"*/
 /*DEFAULT*/
@@ -13,7 +15,7 @@
 /*800-1023PX*/
 /*1024PX->*/
 /*-------------- NAVBAR  -----------*/
-/*-----------------------------      CONFIGURACIÓN TEXTO CATEGORIA MATES/CERAMICA/HILOS/COMESTICA     -----------------------------*/
+/*-----------------------------      CONFIGURACIÓN TEXTO CATEGORIA MATES/CERAMICA/HILOS/COMESTICA/NOSOTROS     -----------------------------*/
 /*DEFAULT*/
 /*400-600PX*/
 /*601-799PX*/
@@ -42,13 +44,52 @@
 /*800-1023PX*/
 /*1024PX->*/
 /*CONFIG ANCHO CONTENEDOR IMAGEN TARJETA PRODUCTOS*/
-/*-------------- CONFIGURACION DEl FOOTER  -----------*/
+/*--------------           CONFIGURACION DEl FOOTER             -----------*/
 /*POLÍTICA DE PRIVACIDAD Y TERMINOS Y CONDICIONES*/
 /*CONTACTO*/
 /*400-600PX*/
 /*601-799PX*/
 /*800-1023PX*/
 /*1024PX->*/
+/*---------------------------------------------     SOCIAL NETWORKS       ---------------------------*/
+/*DEFAULT*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
+/*---------------------------------------------        PÁGINAS "NOSOTROS"         ---------------------------*/
+/*DEFAULT*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
+/*---------------------------------------------        PÁGINA DE CONTACTO         ---------------------------*/
+/*DEFAULT*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
+/*DEFAULT*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
+/*DEFAULT*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
+/*DEFAULT*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
+/*DEFAULT*/
+/*400-600PX*/
+/*601-799PX*/
+/*800-1023PX*/
+/*1024PX->*/
+/*DEFAULT*/
 /*400-600PX*/
 /*601-799PX*/
 /*800-1023PX*/
@@ -96,6 +137,115 @@ html {
   width: 100%;
   /*float: right;*/ }
 
+/*--------------------------------------    PÁGINA "HOME" TARJETAS CATEGORIAS   ------------------------------------------------------------*/
+.productCat:hover {
+  transition: width 0.5s;
+  width: 210px;
+  -webkit-box-shadow: 0px 1px 28px 16px #cbb2df;
+  -moz-box-shadow: 0px 1px 28px 16px #cbb2df;
+  box-shadow: 0px 1px 28px 16px #cbb2df; }
+
+.textCard:hover {
+  font-size: 1.6em;
+  text-align: center;
+  font-weight: bolder;
+  text-decoration: none; }
+
+/* -----------           MEDIA QUERIES DE LOS HOVERS      --------------*/
+@media (min-width: 400px) and (max-width: 600px) {
+  .productCat:hover {
+    width: 210px; }
+  .textCard:hover {
+    font-size: 1.75em; } }
+
+@media (min-width: 601px) and (max-width: 799px) {
+  .productCat:hover {
+    width: 220px; }
+  .textCard:hover {
+    font-size: 1.9em; } }
+
+@media (min-width: 800px) and (max-width: 1023px) {
+  .productCat:hover {
+    width: 230px; }
+  .textCard:hover {
+    font-size: 2em; } }
+
+@media (min-width: 1024px) {
+  .productCat:hover {
+    width: 240px; }
+  .textCard:hover {
+    font-size: 2.1em; } }
+
+/*------------------------      ANCHO LINEAS DE LOS TÍTULOS DE CADA CATEGORIA DE PRODUCTOS      --------------------------------*/
+.title_category::after {
+  /*acá hago la línea debajo del texto*/
+  content: "";
+  border-radius: 12px;
+  width: 7em;
+  height: 5px;
+  background: #C98A3B;
+  position: absolute;
+  bottom: 26%;
+  margin: auto; }
+
+.title_mates::after {
+  /*acá hago la línea debajo del texto*/
+  content: "";
+  border-radius: 12px;
+  width: 5em;
+  height: 5px;
+  background: #C98A3B;
+  position: absolute;
+  bottom: 21%;
+  margin: auto; }
+
+.title_hilos::after {
+  /*acá hago la línea debajo del texto*/
+  content: "";
+  border-radius: 12px;
+  width: 4em;
+  height: 5px;
+  background: #C98A3B;
+  position: absolute;
+  /*left: 35.5%;*/
+  bottom: 21%;
+  margin: auto; }
+
+.title_ceramica::after {
+  /*acá hago la línea debajo del texto*/
+  content: "";
+  border-radius: 12px;
+  width: 6em;
+  height: 5px;
+  background: #C98A3B;
+  position: absolute;
+  bottom: 21%;
+  margin: auto; }
+
+.title_cosme::after {
+  /*acá hago la línea debajo del texto*/
+  content: "";
+  border-radius: 12px;
+  width: 11em;
+  height: 5px;
+  background: #C98A3B;
+  position: absolute;
+  /*left: 35.5%;*/
+  bottom: 21%;
+  margin: auto; }
+
+.title_nosotros::after {
+  /*acá hago la línea debajo del texto*/
+  content: "";
+  border-radius: 12px;
+  width: 5em;
+  height: 5px;
+  background: #C98A3B;
+  position: absolute;
+  /*left: 35.5%;*/
+  bottom: 10%;
+  margin: auto; }
+
 @keyframes neonAnim {
   from {
     text-shadow: 0 0 30px rgba(231, 196, 93, 0.7), 0 0 60px rgba(231, 196, 93, 0.7), 0 0 120px rgba(231, 196, 93, 0.7); }
@@ -110,8 +260,15 @@ div.description {
   border: 1px solid rgba(209, 213, 219, 0.3); }
 
 /*-------------------------        EFECTO DEL BOTON "AGREGAR AL CARRO"         -------------------------*/
-.amount_items:hover:not(:disabled) {
+.amount:hover:not(:disabled) {
+  background: #fffead; }
+
+.more:hover:not(:disabled) {
   background: #5ee45e;
+  color: whitesmoke; }
+
+.less:hover:not(:disabled) {
+  background: #ff3131;
   color: whitesmoke; }
 
 .amount_items:disabled {
@@ -120,11 +277,26 @@ div.description {
 
 .add_cart:hover:not(:disabled) {
   background: #645993;
-  color: whitesmoke; }
+  color: whitesmoke;
+  box-shadow: 0 0 40px #e7c45d;
+  transition: all 0.2s ease; }
 
 .add_cart:disabled {
   cursor: auto;
   color: #00b800; }
+
+/*-------------------------------------------      PÁGINA "CONTACTO"      ------------------------------------------------------------*/
+.style_input:hover:not(:disabled) {
+  background: #f5f0f0; }
+
+.style_textarea:hover:not(:disabled) {
+  background: #f5f0f0; }
+
+.button_submit:hover:not(:disabled) {
+  background: #645993;
+  color: whitesmoke;
+  box-shadow: 0 0 40px #e7c45d;
+  transition: all 0.2s ease; }
 
 .header_style_default {
   display: flex;
@@ -228,7 +400,7 @@ div.description {
 /*----------------------------------*/
 @media (min-width: 800px) and (max-width: 1023px) {
   .logo_container {
-    width: 190px; }
+    width: 130px; }
     .logo_container a img {
       width: 100%;
       height: 100%; }
@@ -256,7 +428,7 @@ div.description {
 /*--------------------------------*/
 @media (min-width: 1024px) {
   .logo_container {
-    width: 200px; }
+    width: 140px; }
     .logo_container a img {
       width: 100%;
       height: 100%; }
@@ -281,6 +453,155 @@ div.description {
       align-items: center;
       justify-content: space-around; } }
 
+/*-----------------------------       CONFIGURACIÓN NAVBAR       -----------------------------*/
+.navbar-toggler-icon {
+  width: 2em !important;
+  height: 2em !important; }
+
+.style_main_menu {
+  font-size: 1.3em;
+  background-color: #ecd3bf !important;
+  opacity: 95%;
+  border-radius: 0 0 20px 0;
+  width: 28%;
+  font-family: "Josh"; }
+  .style_main_menu ul {
+    margin: auto;
+    font-weight: bold; }
+    .style_main_menu ul li {
+      padding: 0 !important;
+      margin: 1em 0.35em 0 0.35em; }
+      .style_main_menu ul li a {
+        color: black !important;
+        font-size: 1.2em;
+        margin: auto;
+        padding-left: 0.25em !important; }
+      .style_main_menu ul li a:hover {
+        background-color: #C98A3B !important;
+        border-radius: 0.5em;
+        font-weight: bold;
+        transition: 0.2s;
+        color: white !important; }
+
+.style_submenu {
+  border: 0;
+  background-color: #ecd3bf;
+  padding: 0 0.2em 0.3em 1.2em !important;
+  border-radius: 0px 20px 20px 0px;
+  position: relative !important;
+  z-index: 2; }
+  .style_submenu forward {
+    position: absolute;
+    z-index: 5px; }
+  .style_submenu li {
+    padding-left: 5em !important;
+    margin: 1.6em 0 !important; }
+    .style_submenu li a {
+      font-family: "Josh";
+      font-size: 1.6em !important;
+      padding: 0 0.8em !important; }
+    .style_submenu li a:hover {
+      background-color: #C98A3B !important;
+      border-radius: 0.5em !important;
+      font-weight: bold !important;
+      transition: 0.2s !important;
+      font-size: 1.75em !important;
+      /*acá tendria que hacer una funcion que lo haga automaticamente de acuerdo al tamaño de la letra que tenga*/ }
+
+/* --------------------------------           MEDIA QUERIES NAVBAR        ----------------------------------*/
+@media (min-width: 800px) and (max-width: 1023px) {
+  .style_main_menu {
+    border-radius: 2em;
+    border-radius: 0px 0px 45px 45px !important;
+    background-color: #ecd3bf !important;
+    font-family: "Josh";
+    width: 45% !important;
+    margin: auto !important;
+    position: unset;
+    z-index: unset;
+    cursor: pointer !important; }
+    .style_main_menu ul {
+      margin: auto !important;
+      font-weight: bold !important; }
+      .style_main_menu ul li {
+        padding: 0 !important;
+        margin: 0 0.75em; }
+        .style_main_menu ul li a {
+          color: black !important;
+          font-size: 1.7em;
+          margin: auto; }
+        .style_main_menu ul li a:hover {
+          background-color: #C98A3B !important;
+          border-radius: 0.5em;
+          font-weight: bold;
+          transition: 0.2s; }
+  .style_submenu {
+    border: 0;
+    background-color: #ecd3bf;
+    opacity: 100%;
+    margin-top: 0.5em !important;
+    /*--- aca configuramos la distancia entre el submenu productos y el resto del menu nav  ---*/
+    padding: 0 0.2em 1.2em 0.2em !important;
+    border-radius: 0px 0px 30px 30px;
+    position: absolute !important;
+    z-index: 1 !important;
+    cursor: pointer !important; }
+    .style_submenu li {
+      margin: 1.5em 0 !important; }
+      .style_submenu li a {
+        font-family: "Josh";
+        font-size: 1.8em !important;
+        padding: 0 0.8em !important; }
+      .style_submenu li a:hover {
+        transition: 0.2s !important;
+        font-size: 2.1em !important; } }
+
+@media (min-width: 1024px) {
+  .style_main_menu {
+    border-radius: 2em;
+    border-radius: 0px 0px 45px 45px !important;
+    background-color: #ecd3bf !important;
+    font-family: "Josh";
+    width: 40% !important;
+    margin: auto !important;
+    position: relative;
+    z-index: 1;
+    cursor: pointer !important; }
+    .style_main_menu ul {
+      margin: auto !important;
+      font-weight: bold !important; }
+      .style_main_menu ul li {
+        padding: 0 !important;
+        margin: 0 0.75em; }
+        .style_main_menu ul li a {
+          color: black !important;
+          font-size: 1.9em;
+          margin: auto; }
+        .style_main_menu ul li a:hover {
+          background-color: #C98A3B !important;
+          border-radius: 0.5em;
+          font-weight: bold;
+          transition: 0.2s; }
+  .style_submenu {
+    border: 0;
+    background-color: #ecd3bf;
+    margin-top: 0.5em !important;
+    /*--- aca configuramos la distancia entre el submenu productos y el resto del menu nav  ---*/
+    padding: 0 0.2em 1.2em 0.2em !important;
+    border-radius: 0px 0px 30px 30px;
+    position: absolute !important;
+    z-index: 2 !important;
+    cursor: pointer !important; }
+    .style_submenu li {
+      margin: 1.5em 0 !important; }
+      .style_submenu li a {
+        font-family: "Josh";
+        font-size: 2em !important;
+        padding: 0 0.8em !important; }
+      .style_submenu li a:hover {
+        transition: 0.2s !important;
+        font-size: 2.1em !important; } }
+
 html {
   height: 100%;
   font-size: 62.5%; }
@@ -293,100 +614,24 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: black;
+  padding: 0 !important;
   /*hasta aca le dimos cuestiones de forma a la imagen que se usa de fondo en la pagina*/ }
 
 .body_style {
   font-family: "Public Sans", sans-serif;
-  min-height: 100%;
-  /*background-size: cover;*/
-  /*background-position: center center;*/
-  /*background-repeat: no-repeat;*/
-  /*background-attachment: fixed;*/
-  /*background-color: black;*/
-  /*hasta aca le dimos cuestiones de forma a la imagen que se usa de fondo en la pagina*/ }
+  min-height: 100%; }
 
-/*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
-.container_nav {
-  border-style: solid !important;
-  border-width: 0.4em !important;
-  border-color: #ceccbf !important;
-  border-radius: 2em !important;
-  background-color: #ecd3bf !important; }
-
-.nav_prop {
-  width: 40% !important;
-  margin: auto !important; }
-
-.color li a {
-  color: black !important; }
-
-.reference {
-  font-size: 3.3em;
-  font-family: "Josh";
-  text-align: center;
-  color: #645993;
-  font-weight: bold;
-  height: 100px;
+/*-------------------------------      PÁGINA "CONTACTO" EN MOBILE FIRST      -------------------------*/
+.contact {
+  margin: auto;
+  width: 40%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin: 0;
-  position: relative;
-  /*padding-top: 1em;*/
-  /*padding-bottom: 0.5em;*/ }
+  justify-content: space-around; }
 
-.reference::after {
-  /*acá hago la línea debajo del texto*/
-  content: "";
-  border-radius: 12px;
-  width: 5em;
-  height: 5px;
-  background: #C98A3B;
-  position: absolute;
-  /*left: 35.5%;*/
-  bottom: 26%;
-  margin: auto; }
-
-/* --------------------------------           MEDIA QUERIES            ----------------------------------*/
-@media (min-width: 400px) and (max-width: 600px) {
-  /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
-  .reference {
-    font-size: 3.75em;
-    height: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0; } }
-
-@media (min-width: 601px) and (max-width: 799px) {
-  /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
-  .reference {
-    font-size: 4.2em;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0; } }
-
-@media (min-width: 800px) and (max-width: 1023px) {
-  /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
-  .reference {
-    font-size: 4.7em;
-    height: 160px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0; } }
-
-@media (min-width: 1024px) {
-  /*-----------------------------       CONFIGURACIÓN TEXTO CATEGORIA       -----------------------------*/
-  .reference {
-    font-size: 5em;
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0; } }
+.mensage {
+  width: 25em; }
 
 /*-------------------------------      CONTENEDOR DE TODAS LAS TARJETAS DE PRODUCTOS EN MOBILE FIRST      -------------------------*/
 .galery_products_container {
@@ -415,6 +660,7 @@ div.description {
   text-align: justify;
   padding: 5%; }
   div.description p.title {
+    font-family: spirqual;
     color: white;
     font-size: 2.3em;
     text-align: center;
@@ -490,50 +736,47 @@ div.image_product {
     justify-content: space-evenly;
     gap: 10% 0;
     margin: 5%; }
-    .cards_products_container:nth-child(even) div.description {
-      grid-column: 2;
-      /*margin-left: 4em;*/ }
-    .cards_products_container:nth-child(even) div.image_product {
-      grid-column: 1;
-      grid-row: 1; }
-    .cards_products_container div.description {
-      grid-area: description;
-      display: flex;
-      /*flex-direction: column;*/
-      width: 90%;
+  div.image_product {
+    grid-column: 1;
+    grid-row: 1; }
+  div.description {
+    grid-area: description;
+    display: flex;
+    /*flex-direction: column;*/
+    width: 90%;
+    text-align: justify;
+    justify-content: space-around;
+    /*margin-left: 5%*/
+    row-gap: 2%; }
+    div.description p.title {
+      color: white;
+      font-size: 3.7em;
+      text-align: center;
+      font-weight: bold;
+      margin: 0 auto;
+      width: max-content; }
+    div.description p.descript {
+      color: white;
+      font-size: 1.9em;
       text-align: justify;
-      justify-content: space-around;
-      /*margin-left: 5%*/
-      row-gap: 2%; }
-      .cards_products_container div.description p.title {
-        color: white;
-        font-size: 3.7em;
-        text-align: center;
-        font-weight: bold;
-        margin: 0 auto;
-        width: max-content; }
-      .cards_products_container div.description p.descript {
-        color: white;
-        font-size: 1.9em;
-        text-align: justify;
-        margin: 1.4em 0; }
-      .cards_products_container div.description p.price {
-        font-size: 2.35em; }
-      .cards_products_container div.description .buttons_container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around; }
-        .cards_products_container div.description .buttons_container ul {
-          display: inline-block;
-          margin: 5% 0;
-          padding: 0; }
-    .cards_products_container div.image_product {
-      grid-area: image_product;
+      margin: 1.4em 0; }
+    div.description p.price {
+      font-size: 2.35em; }
+    div.description .buttons_container {
       display: flex;
-      justify-content: center;
-      width: 100%;
-      margin: 0 0 0 5%; } }
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around; }
+      div.description .buttons_container ul {
+        display: inline-block;
+        margin: 5% 0;
+        padding: 0; }
+  div.image_product {
+    grid-area: image_product;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0 0 5%; } }
 
 /*--------------------------------------------------------------------------*/
 @media (min-width: 1024px) {
@@ -551,12 +794,6 @@ div.image_product {
     justify-content: space-evenly;
     gap: 10% 0;
     margin: 5%; }
-    .cards_products_container:nth-child(even) div.description {
-      grid-column: 2;
-      /*margin-left: 4em;*/ }
-    .cards_products_container:nth-child(even) div.image_product {
-      grid-column: 1;
-      grid-row: 1; }
     .cards_products_container div.description {
       grid-area: description;
       display: flex;
@@ -575,23 +812,21 @@ div.image_product {
         width: max-content; }
       .cards_products_container div.description p.descript {
         color: white;
-        font-size: 2.1em;
+        font-size: 2.3em;
         text-align: justify;
         margin: 1em 0; }
       .cards_products_container div.description p.price {
         font-size: 2.55em; }
-      .cards_products_container div.description .buttons_container {
+      .cards_products_container div.description div.buttons_container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
-        width: 75%;
+        width: 80%;
         margin: 0 auto; }
-        .cards_products_container div.description .buttons_container ul {
+        .cards_products_container div.description div.buttons_container ul.distance_buttons {
           display: inline-block;
-          margin: 5% 0;
-          padding: 0;
-          gap: 20px; }
+          margin: 0 5%; }
     .cards_products_container div.image_product {
       grid-area: image_product;
       display: flex;
@@ -601,39 +836,31 @@ div.image_product {
 
 .social_bar {
   position: fixed;
-  left: 88%;
-  top: 58%;
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*z-index: 100;*/
-  /*float: right;*/ }
+  left: 88.5%;
+  top: 58%; }
 
+/* --------------------------------           MEDIA QUERIES    ----------------------------------*/
 @media (min-width: 400px) and (max-width: 600px) {
   .social_bar {
-    position: fixed;
-    left: 91%;
+    left: 91.5%;
     top: 58%; } }
 
 @media (min-width: 601px) and (max-width: 799px) {
   .social_bar {
-    position: fixed;
-    left: 93%;
+    left: 94%;
     top: 58%; } }
 
 @media (min-width: 800px) and (max-width: 1023px) {
   .social_bar {
-    position: fixed;
     left: 95.5%;
     top: 58%; } }
 
 @media (min-width: 1024px) {
   .social_bar {
-    position: fixed;
     left: 96.5%;
     top: 58%; } }
 
 .pie {
-  height: 100%;
   background-color: #414060;
   opacity: 85%;
   font-family: Arial, Helvetica, sans-serif;
@@ -675,10 +902,8 @@ div.image_product {
 
 .pie a:hover {
   color: yellow;
-  transition: all .3s; }
-
-.contact {
-  /*width: 8.5%;*/ }
+  transition: all .25s;
+  font-weight: bold; }
 
 .contact > ul {
   display: flex;
@@ -710,11 +935,31 @@ div.image_product {
     font-size: 2.5em; } }
 
 /*---------- BOTONERA DE ELEGIR CANTIDAD DE ITEMS --------*/
+ul#distance_buttons {
+  margin: 0 10%; }
+  ul#distance_buttons button {
+    margin: 0 15%; }
+  ul#distance_buttons input {
+    margin: 0 15%; }
+
 .amount_items {
   font-size: 1rem;
   text-align: center;
   border-radius: 0.4em;
   border: none; }
+
+.more {
+  padding: 0.3em 0.7em;
+  background-color: #8a7884;
+  color: #eee; }
+
+.amount {
+  padding: 0.3em 0.7em; }
+
+.less {
+  padding: 0.3em 0.7em;
+  background-color: #8a7884;
+  color: #eee; }
 
 /*------ BOTON DE AGREGAR AL CARRO ---------*/
 .add_cart {
@@ -725,7 +970,7 @@ div.image_product {
   padding: 0.25rem;
   width: 10em;
   border-radius: 1rem;
-  color: #f27413;
+  color: #756c65;
   cursor: pointer; }
 
 /* --------------------------------           MEDIA QUERIES            ----------------------------------*/
@@ -759,3 +1004,329 @@ div.image_product {
     text-align: center; }
   .add_cart {
     font-size: 1.9em; } }
+
+/*-------------------------------------------      PÁGINA "CONTACTO"      ------------------------------------------------------------*/
+.button_submit {
+  font-size: 2em;
+  font-weight: bold;
+  background-color: #eee;
+  border: none;
+  padding: 0.25rem;
+  width: 10em;
+  border-radius: 1rem;
+  color: #f27413;
+  cursor: pointer; }
+
+/*---------------------*/
+.title_category {
+  font-size: 3.3em;
+  font-family: "Josh";
+  text-align: center;
+  color: #645993;
+  font-weight: bold;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative; }
+
+/*---------------        CONFIGURACIÓN DE LOS ESTILOS DE LOS CONTENEDORES PADRE-HIJOS DEL MAIN      ------------------.*/
+.productContainer {
+  /*ESTE ES LA CONFIG DEL CONTENEDOR PRINCIPAL DE LOS ITEMS*/
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 0 5% 0;
+  padding: 1.5%; }
+
+.productCat {
+  /*-------  ACÁ CONFIGURO CÓMO SERÁ EL CONTENDOR DE CADA TARJETA/CATEGORIA  --------*/
+  width: 200px;
+  border-color: #f3b365;
+  border-style: ridge;
+  border-width: 2px;
+  margin: 1.5%;
+  border-radius: 15px;
+  justify-content: space-evenly;
+  background: white; }
+
+.resize {
+  /*-----    redimensiono todas las imagenes botoneras   -----*/
+  width: 100%;
+  border-radius: 15px 15px 0 0; }
+
+.productCat__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px; }
+
+.textCard {
+  font-family: "spirqual";
+  color: black;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bolder;
+  text-decoration: none; }
+
+.productContainer .productCat img {
+  /*esto lo hago para que el campo de la descripción del texto se ajuste automaticamente al mismo tamaño que la imagen padre*/
+  /* width: 20%; */ }
+
+.cuerpo {
+  width: 75%;
+  margin: 4em auto 10em auto; }
+
+.title_nosotros {
+  font-size: 3.8em;
+  font-family: "Josh";
+  color: #645993;
+  text-align: center;
+  margin: 1em 0 !important;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative; }
+
+.text {
+  font-size: 1.8em;
+  font-family: "Josh";
+  text-align: justify;
+  color: black;
+  font-weight: bold; }
+
+/* --------------------------------           MEDIA QUERIES         ----------------------------------*/
+@media (min-width: 400px) and (max-width: 600px) {
+  .title_nosotros {
+    font-size: 3.9em; }
+  .text {
+    font-size: 1.9em; } }
+
+@media (min-width: 601px) and (max-width: 799px) {
+  .title_nosotros {
+    font-size: 4.1em; }
+  .text {
+    font-size: 2em; } }
+
+@media (min-width: 800px) and (max-width: 1023px) {
+  .title_nosotros {
+    font-size: 4.3em; }
+  .text {
+    font-size: 2.15em; } }
+
+@media (min-width: 1024px) {
+  .title_nosotros {
+    font-size: 4.5em; }
+  .text {
+    font-size: 2.3em; } }
+
+.title_mates {
+  font-size: 3.3em;
+  font-family: "Josh";
+  text-align: center;
+  color: #645993;
+  font-weight: bold;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative; }
+
+.title_hilos {
+  font-size: 3.3em;
+  font-family: "Josh";
+  text-align: center;
+  color: #645993;
+  font-weight: bold;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative; }
+
+.title_ceramica {
+  font-size: 3.3em;
+  font-family: "Josh";
+  text-align: center;
+  color: #645993;
+  font-weight: bold;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative; }
+
+.title_cosme {
+  font-size: 3.3em;
+  font-family: "Josh";
+  text-align: center;
+  color: #645993;
+  font-weight: bold;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative; }
+
+/* --------------------------------           MEDIA QUERIES            ----------------------------------*/
+@media (min-width: 400px) and (max-width: 600px) {
+  .title_mates {
+    font-size: 3.75em; }
+  .title_hilos {
+    font-size: 3.75em; }
+  .title_ceramica {
+    font-size: 3.75em; }
+  .title_cosme {
+    font-size: 3.75em; } }
+
+@media (min-width: 601px) and (max-width: 799px) {
+  .title_mates {
+    font-size: 4.4em; }
+  .title_hilos {
+    font-size: 4.4em; }
+  .title_ceramica {
+    font-size: 4.4em; }
+  .title_cosme {
+    font-size: 4.4em; } }
+
+@media (min-width: 800px) and (max-width: 1023px) {
+  .title_mates {
+    font-size: 4.6em; }
+  .title_hilos {
+    font-size: 4.6em; }
+  .title_ceramica {
+    font-size: 4.6em; }
+  .title_cosme {
+    font-size: 4.6em; } }
+
+@media (min-width: 1024px) {
+  .title_mates {
+    font-size: 4.7em; }
+  .title_hilos {
+    font-size: 4.7em; }
+  .title_ceramica {
+    font-size: 4.7em; }
+  .title_cosme {
+    font-size: 4.7em; } }
+
+/*-------------------------------------------      PÁGINA "CONTACTO"      ------------------------------------------------------------*/
+.style_card_container {
+  margin: auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  backdrop-filter: blur(5px) saturate(181%);
+  -webkit-backdrop-filter: blur(5px) saturate(181%);
+  background-color: rgba(103, 85, 109, 0.45);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  padding: 4em 0; }
+
+.text_title_contact {
+  font-size: 2.4em;
+  font-weight: bold;
+  margin: 0 0 0 1em; }
+
+.text_contact {
+  margin: 1.5em;
+  font-size: 1.7em;
+  text-align: justify; }
+
+.style_label {
+  font-size: 1.6em;
+  font-weight: bold; }
+
+.style_input {
+  width: 16em;
+  font-size: 2em;
+  border-radius: 0.25em; }
+
+.style_textarea {
+  font-size: 1.6em;
+  border-radius: 0.25em; }
+
+/* --------------------------------           MEDIA QUERIES PAGINA CONTACTO        ----------------------------------*/
+@media (min-width: 400px) and (max-width: 600px) {
+  .style_card_container {
+    width: 90%; }
+  .text_title_contact {
+    font-size: 2.8em;
+    font-weight: bold;
+    margin: 0 0 0 2em; }
+  .text_contact {
+    font-size: 1.9em;
+    margin: 1em 2.5em; }
+  .style_label {
+    font-size: 1.6em; }
+  .style_input {
+    width: 18em;
+    font-size: 2em;
+    border-radius: 0.25em; }
+  .style_textarea {
+    width: 20em;
+    font-size: 1.8em; } }
+
+@media (min-width: 601px) and (max-width: 799px) {
+  .style_card_container {
+    width: 70%; }
+  .text_title_contact {
+    font-size: 3em;
+    margin: 0 0 0 1.5em; }
+  .text_contact {
+    font-size: 2.1em;
+    margin: 1em 2.2em; }
+  .style_label {
+    font-size: 1.8em; }
+  .style_input {
+    font-size: 2em;
+    width: 18em; }
+  .style_textarea {
+    width: 19.5em;
+    font-size: 2em; } }
+
+@media (min-width: 800px) and (max-width: 1023px) {
+  .style_card_container {
+    width: 58%; }
+  .text_title_contact {
+    font-size: 3em;
+    margin: 0 0 0 2em; }
+  .text_contact {
+    font-size: 2.1em;
+    margin: 1em 2.6em; }
+  .style_label {
+    font-size: 1.9em; }
+  .style_input {
+    font-size: 2.2em;
+    width: 19em; }
+  .style_textarea {
+    width: 19em;
+    font-size: 2.2em; } }
+
+@media (min-width: 1024px) {
+  .style_card_container {
+    width: 50%;
+    max-width: 60%; }
+  .text_title_contact {
+    font-size: 3.3em;
+    margin: 0 0 0 2em; }
+  .text_contact {
+    font-size: 2.1em;
+    margin: 1em 2em 0 2.1em; }
+  .style_label {
+    font-size: 1.7em; }
+  .style_input {
+    font-size: 2em;
+    width: 23em; }
+  .style_textarea {
+    font-size: 2em;
+    width: 23em; } }

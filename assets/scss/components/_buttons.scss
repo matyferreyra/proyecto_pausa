@@ -1,11 +1,40 @@
 
 /*---------- BOTONERA DE ELEGIR CANTIDAD DE ITEMS --------*/
 
+ul#distance_buttons{
+    margin: 0 10%;
+
+    button{
+        margin: 0 15%;
+    }
+    
+    input {
+        margin: 0 15%;
+    }    
+}
+
+
 .amount_items {
     font-size: 1rem;
     text-align: center;
     border-radius: 0.4em;
     border:none;
+}
+
+.more{
+    padding: 0.3em 0.7em;
+    background-color:rgb(138, 120, 132);
+    color: #eee;
+}
+
+.amount{
+    padding: 0.3em 0.7em;
+
+}
+.less{
+    padding: 0.3em 0.7em;
+    background-color: rgb(138, 120, 132);
+    color: #eee;
 }
 
 /*------ BOTON DE AGREGAR AL CARRO ---------*/
@@ -18,7 +47,7 @@
     padding: 0.25rem;        
     width: 10em;
     border-radius: 1rem;
-    color: #f27413;        
+    color: #756c65;        
     cursor: pointer;
 }
 
@@ -77,4 +106,20 @@
     .add_cart {
         font-size: 1.9em;
 }
+}
+
+
+
+/*-------------------------------------------      PÁGINA "CONTACTO"      ------------------------------------------------------------*/
+
+.button_submit{
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #eee;
+    border: none;
+    padding: 0.25rem;        
+    width: 10em;
+    border-radius: 1rem;
+    color: #f27413;        
+    cursor: pointer;   
 }

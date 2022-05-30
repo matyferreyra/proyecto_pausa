@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/nosotros.css"> <!-- Linkeado externo a pagina de estilos CSS-->
-    <title>PAUSA - MATES</title> <!-- Esto sirve para nombrar la pestaña del navegador-->
+    <link rel="stylesheet" href="/assets/css/main.css"> <!-- Linkeado externo a pagina de estilos CSS-->
+    <title>PAUSA - NOSOTROS</title> <!-- Esto sirve para nombrar la pestaña del navegador-->
     <link rel="icon" href="../assets/img/pausa_favicon_small.png">
 </head>
 
 <body>
     <!-----------------------------------------         ENCABEZADO           ---------------------------------------->
-    <header>
-        <div class="brandBox">
-            <a href="./../index.html"><img src="../assets/img/Logo Tiendita Pausa 400px SVG.svg" alt="Logo Pausa"
-                    class="img-fluid"></a>
+    <header class="header_style_default">
+        <div class="logo_container">
+            <a href="./../index.html"><img src="../assets/img/Logo Tiendita Pausa 400px SVG.svg" alt="Logo Pausa"></a>
         </div>
-        <div class="leyendaCentral">
+
+        <div class="brand_container">
             <p id="pausa">
                 Pausa
             </p>
@@ -26,73 +26,87 @@
                 Tiendita de Cosas
             </p>
         </div>
+
         <div class="margenDerecho">
             <ul>
-                <!-- Esta lista va por fuera de la otra lista anterior porque con CSS tendrá un tratamiento distinto-->
-                <li><a href="./../pages/cuenta.html"><img src="../assets/img/icon_user_48px_f4c3b4.png" alt="cuenta"
-                            id="imgCuenta"></a></li>
-                <li><a href="./../pages/carrito.html"><img src="../assets/img/icon_cart_32px_f4c3b4.png" alt="usuario"
-                            id="sizecart"></a></li>
+                <li><a href="#"><img src="../assets/img/icon_user_48px_f4c3b4.png" alt="cuenta"
+                            id="imgCuenta img-fluid"></a></li>
+                <li><a href="#"><img src="../assets/img/icon_cart_32px_f4c3b4.png" alt="usuario"
+                            id="sizecart img-fluid"></a></li>
             </ul>
         </div>
-        </div>
+
     </header>
 
     <main id="main">
-        <div>
 
-            <nav class="topnav" id="myTopnav">
-                <a href="./../index.html">Inicio</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Productos
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="./ceramica.html">Cerámica</a>
-                        <a href="./cosmetica_natural.html">Cosmética Natural</a>
-                        <a href="./hilos.html">Hilos</a>
-                        <a href="./mates.html">Mates</a>
-                    </div>
+        <!-- <ul class="navbar-nav d-flex flex-row justify-content-evenly h4 color nav_prop container_nav"> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light h4 color nav_prop style_main_menu">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown activo" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu style_submenu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./mates.html">MATES</a></li>
+                                <li><a class="dropdown-item" href="./hilos.html">HILOS</a></li>
+                                <li><a class="dropdown-item" href="./ceramica.html">CERAMICA</a></li>
+                                <li><a class="dropdown-item" href="./cosmetica.html">COSMETICA NATURAL</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+                        </li>
+                    </ul>
+
                 </div>
-                <a href="#about">Nosotros</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>                
-            </nav>
-
-        </div>
+            </div>
+        </nav>
 
         <div>
-            <p class="reference">Nosotros</p>
+            <p class="title_nosotros">Nosotros</p>
         </div>
 
 
         <!----------------------------         CUERPO CON TEXTO      ---------------------------->
-        
+
         <div class="container d-flex align-items-center cuerpo">
             <div class="col-6">
-                <p class="text text-wrap">Somos Agustina y Matias, les hacedores de este pequeño proyecto sureño llamado "Tiendita Pausa", que
-                    nació gracias a la creatividad y la pasión de Agus por crear cosas nuevas, y en su imparable
+                <p class="text text-wrap">Somos Agustina y Matias, les hacedores de este pequeño proyecto sureño llamado
+                    "Tiendita Pausa", que nació gracias a la creatividad y la pasión de Agus por crear cosas nuevas, y en su imparable
                     necesidad de plasmar con sus manos, y por medio de distintos materiales, texturas y formas, sus
                     experiencias vividas en la vida cotidiana y lo que de alguna manera percibe continuamente por medio
                     de sus sentidos, a lo largo de las 4 estaciones, con sus variados climas y a lo largo de los
-                    distintos rincones patagonicos. Mientras que Mati por su parte aporta su buen gusto, su mente y su
-                    lógica para brindar el soporte necesario en el proyecto. Juntos hacemos este hermoso proyecto que
+                    distintos rincones patagonicos. Mientras que Mati por su parte aporta su mente para brindar el soporte necesario en el proyecto. Juntos hacemos este hermoso proyecto que
                     esperamos les guste y puedan disfrutar tanto como nosotros lo hacemos.</p>
             </div>
             <div class="col-1"></div> <!-- Este se usa para espaciar en el medio-->
             <div class="imgContainer col-5 text-right">
-                <img src="../assets/img/Agus y Mati.jpeg" alt="Agus y Mati" class="img-fluid rounded-3 float-end border img-thumbnail border">
+                <img src="../assets/img/Agus y Mati.jpeg" alt="Agus y Mati"
+                    class="img-fluid rounded-3 float-end border img-thumbnail border">
             </div>
-            
-        </div>  
+
+        </div>
 
 
-            
+
 
         <!-----------------------------------------    SOCIAL BAR DENTRO DEL MAIN   ---------------------------------------->
-        <aside class="socialBar">
-                <a href="https://www.instagram.com/tienditapausa/?hl=es-la" class="iconInsta" target="_blank"><img
-                        src="./../assets/img/instagram_small.png" alt="icono instagram"></a>
-                </aside>
+        <aside class="social_bar">
+            <a href="https://www.instagram.com/tienditapausa/?hl=es-la" class="icon_instagram img-fluid"
+                target="_blank"><img src="./../assets/img/instagram_small.png" alt="instagram"></a>
+        </aside>
 
     </main>
     <!-----------------------------------------           PIE DE PÁGINA           ---------------------------------------->
